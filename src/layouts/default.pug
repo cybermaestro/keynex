@@ -1,0 +1,17 @@
+include ../../node_modules/bempug/index
+- BEMPUG.modifier = '_';
+
+include ../modules/head/head
+include ../modules/footer/footer
+include ../modules/header/header
+
+doctype html
+html(lang="ru")
+  block head
+    +head
+  body
+    block header
+      +header
+    block content
+    
+    +footer

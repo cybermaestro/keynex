@@ -1,0 +1,52 @@
+$border-radius: 10px;
+$border: 2px solid $blue;
+$box-shadow: 0px 0px 4px $blue;
+$box-shadow-other: 0px 0px 10px 3px #A1B4D1;
+
+$types: (
+  h1: (
+    desktop: (64px, 83px, 700),
+    mobile: (32px, 35px, 700)
+  ),
+  h2: (
+    desktop: (48px, 56px, 400),
+    mobile: (22px, 26px, 700)
+  ),
+  h3: (
+    desktop: (40px, 52px, 700),
+    tablet: (32px, 40px, 700),
+    mobile: (20px, 24px, 700)
+  ),
+  h4: (
+    desktop: (32px, 36px, 400),
+    mobile: (24px, 26px, 700)
+  ),
+  h5: (
+    desktop: (32px, 35px, 700),
+    mobile: (32px, 35px, 700)
+  ),
+  h6: (
+    desktop: (32px, 35px, 400),
+    mobile: (32px, 35px, 400)
+  ),
+  text: (
+    desktop: (24px, 30px, 400),
+    mobile: (24px, 30px, 400)
+  ),
+  bold-text: (
+    desktop: (24px, 30px, 400),
+    mobile: (24px, 30px, 400)
+  ),
+  medium-text: (
+    desktop: (20px, 120%, 400),
+    mobile: (20px, 120%, 400)
+  ),
+  small-text: (
+    desktop: (16px, 120%, 400),
+    mobile: (16px, 120%, 400)
+  ),
+  smallest-text: (
+    desktop: (14px, 120%, 400),
+    mobile: (14px, 120%, 400)
+  ),
+);

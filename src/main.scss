@@ -1,0 +1,30 @@
+@import "~bootstrap";
+// @import '~bootstrap-vue/dist/bootstrap-vue.css';
+@import "~swiper/swiper-bundle.css";
+@import "~slim-select/dist/slimselect.min.css";
+@import "./common/scss/";
+@import "~normalize-scss/sass/normalize";
+@import "./modules/**/*.scss";
+
+*, *::before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+::-ms-clear {
+  display: none;
+}
+
+html {
+  font-size: 16px;
+  font-variant-numeric: lining-nums;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}

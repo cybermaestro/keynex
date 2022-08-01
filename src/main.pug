@@ -1,0 +1,14 @@
+extends ./layouts/default
+include ./modules/head/head
+include ./modules/header/header
+include ./modules/footer/footer
+
+block head
+  +head({ title: 'Главная' })
+
+block header
+  +header({})
+
+block content
+  main.page.main-page
+    img(src="/images/logo.png")
