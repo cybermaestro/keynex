@@ -1,1 +1,67 @@
 // common (utils) classes
+@for $width from 10 through 100 {
+    @if $width % 5 == 0 {
+      .w-#{$width} {
+        width: #{$width}#{'%'} !important;
+      }
+      
+      .w-mob-#{$width} {
+        width: #{$width}#{'%'} !important;
+      }
+    }
+  }
+
+  @for $size from 2 through 500 {
+    @if $size % 1 == 0 {
+      .set-w-#{$size} {
+        width: #{$size}px !important;
+      }
+    
+      .set-h-#{$size} {
+        height: #{$size}px !important;
+      }
+    
+      .set-w-xs {
+        @include mobile {
+          width: #{$size}px !important;
+        }
+      }
+      
+      .set-h-xs {
+        @include mobile {
+          height: #{$size}px !important;
+        }
+      }
+    
+      .set-m {
+        &l-#{$size} {
+          margin-left: #{$size}px;
+        }
+        &r-#{$size} {
+          margin-right: #{$size}px;
+        }
+        &t-#{$size} {
+          margin-top: #{$size}px;
+        }
+        &b-#{$size} {
+          margin-bottom: #{$size}px;
+        }
+      }
+      
+      .set-p {
+        &l-#{$size} {
+          padding-left: #{$size}px;
+        }
+        &r-#{$size} {
+          padding-right: #{$size}px;
+        }
+        &t-#{$size} {
+          padding-top: #{$size}px;
+        }
+        &b-#{$size} {
+          padding-bottom: #{$size}px;
+        }
+      }
+    }
+  }
+  

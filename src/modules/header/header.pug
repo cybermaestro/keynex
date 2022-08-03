@@ -1,3 +1,13 @@
+include ../icon/icon
+
 mixin header(data)
   +b('header', {}, 'header')
     .container
+      +e('hello').col-6 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil hic, consectetur temporibus ducimus totam ea optio necessitatibus, error dolorum facilis molestiae consequatur eligendi inventore distinctio. Fuga labore ut cupiditate nostrum.Deserunt fugit, totam magni quaerat quas hic maxime porro, commodi veritatis adipisci debitis architecto dolorem libero autem harum corporis temporibus corrupti doloremque consequatur qui ipsum recusandae. Ipsa nostrum deserunt quisquam.Id voluptates harum obcaecati ab, nulla placeat at blanditiis dolor ipsam aspernatur amet accusamus est modi consequuntur? Illum recusandae laudantium reprehenderit quaerat excepturi, eligendi minima numquam minus reiciendis eveniet alias?Consequuntur blanditiis aliquam neque culpa, dolorum dolore fuga, asperiores vel, ipsum voluptate hic nemo a facilis quos cumque illo dignissimos eum! Saepe deleniti ea itaque id excepturi ex, quod delectus.Veritatis sit nisi provident nobis. Pariatur magni laboriosam officia similique eveniet laborum consequuntur, iste nesciunt, repudiandae dolores repellendus voluptatibus amet? Aspernatur, aliquam ipsam molestiae placeat eos cum quaerat sit laboriosam.Debitis asperiores earum at. Voluptatem ut, perferendis natus explicabo placeat hic totam perspiciatis! Magnam nulla ut quis fuga dolorem dolorum, ab ipsum dicta, quas corrupti culpa suscipit, repudiandae neque hic!Distinctio sequi totam expedita aperiam adipisci voluptatem at, laudantium eaque. Delectus magnam a inventore, perspiciatis earum expedita consectetur sequi cumque illum modi. Quod nesciunt molestiae deserunt quidem nobis eius nulla?Corporis doloribus corrupti amet tenetur consequuntur facilis eveniet eius possimus animi placeat incidunt sit dignissimos sunt, sint inventore labore odio ipsa debitis rem praesentium quas. Modi aliquid minus voluptates rem!Harum fugit, repellendus totam sit nihil alias distinctio, vel ea similique non nobis cum optio ex a cupiditate quos accusantium corporis atque ullam sunt iusto laudantium modi incidunt? Saepe, expedita!Repellat totam delectus natus eum ut quas illum mollitia, quasi minus provident doloribus dolor in commodi voluptate dignissimos, nostrum laborum consequatur eos expedita ratione. Odit sint fugiat voluptatem dolore nulla.
+      +e('bloks')
+      +e('bloks', {m: 'two'})
+      +e('button').brand-button.mt-4 Получить прайс 
+      +e('button').brand-button.red.mt-5 Получить прайс 
+      +e('button').brand-button.frameless.mt-6 Получить прайс
+      +e('button')(href = "#").brand-button.phone_button.link.no-line.set-mt-25 ЗАКАЗАТЬ ЗВОНОК
+        +icon('phone_button').icon_button.set-mr-12

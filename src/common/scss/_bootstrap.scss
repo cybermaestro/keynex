@@ -1,1 +1,18 @@
 // bootstrap overrides
+.container {
+    @media (min-width: 1200px) {
+      max-width: 1320px !important;
+    }
+  
+    @media (min-width: 768px) and (max-width: 1091px) {
+      max-width: 964px;
+    }
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }

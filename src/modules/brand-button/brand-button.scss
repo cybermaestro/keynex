@@ -1,0 +1,110 @@
+.brand-button {
+    font-size: 16px;
+    padding: 0 44px;
+    width: 280px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    line-height: 21px;
+    color: $DarkRed;
+    background-color: $White;
+    @include border-radius;
+    @include border;
+    transition: all 0.25s ease;
+
+    &[disabled] {
+        background-color: $Gray;
+        pointer-events: none;
+    }
+
+    &:hover,
+    &.hover {
+        color: $White;
+
+        &.no-border {
+            border: none;
+        }
+
+        background-color: $DarkRed;
+    }
+
+    &:active,
+    &:focus,
+    &.active {
+        color: $White;
+        background-color: rgba($DarkRed, 0.5);
+    }
+
+    &.red {
+        color: $White;
+        background-color: $DarkRed;
+
+        &[disabled] {
+            background-color: $Gray;
+        }
+
+        &:hover,
+        &.hover {
+            background-color: $Red;
+        }
+
+        &:active,
+        &:focus,
+        &.active {
+            background-color: rgba($Red, 0.5);
+        }
+    }
+
+    &.frameless {
+        border: none;
+        color: $DarkRed;
+        background-color: $White;
+
+        &[disabled] {
+            background-color: $Gray;
+        }
+
+        &:hover,
+        &.hover {
+            background-color: $ExtraBrightGray;
+        }
+
+        &:active,
+        &:focus,
+        &.active {
+            color: $White;
+            background-color: rgba($DarkGray, 0.5);
+        }
+    }
+
+    &.phone_button {
+        padding: 0 22px;
+        width: 242px;
+        height: 70px;
+        color: $DarkRed  !important;
+
+        &:hover,
+        &.hover {
+            background-color: $Gray  !important;
+            border: none;
+        }
+
+        &:active,
+        &:focus,
+        &.active {
+            background-color: rgba($Gray, 0.5) !important;
+            border: none;
+        }
+    }
+}
+
+.icon_button {
+    width: 19px;
+    height: 19px;
+    order: -1;
+}
