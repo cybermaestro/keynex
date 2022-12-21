@@ -1,8 +1,17 @@
-.link {
+.link-red {
     color: $Red;
     text-decoration: underline;
   
     &.no-line {
       text-decoration: none;
     }
+}
+
+.link {
+  color: $SuperDarkGray;
+  text-decoration: none;
+  
+  &.line {
+    text-decoration: underline;
+  }
 }

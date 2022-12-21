@@ -1,0 +1,32 @@
+
+mixin menu
+  +b('menu')&attributes(attributes)
+    .container
+        +e('flex').d-flex.w-100.justify-content-between.set-pt-30
+            +b('logo').set-mr-90
+                +e('background')
+                img(src="/src/static/images/keynex.svg", alt="logo")
+                +e('text', {}, 'p').set-mt-17 Задаем новый уровень
+            +b('center')
+                +e('search', {}, 'form')(action="#")
+                    +e('search-label', {}, 'label')(for="search").icon
+                    +e('search-input', {p: 'header'}, 'input')(
+                        type="text"
+                        placeholder="Поиск по сайту"
+                        name="search"
+                        )
+                +b('navbar').d-flex.w-100.justify-content-between.set-mt-13
+                    +e('link', {}, 'a').link.set-pr-22   Услуги
+                        +e('link-jackdaw', {}, 'label')(for="jackdaw").icon
+                    +e('link', {}, 'a').link Кейсы
+                    +e('link', {}, 'a').link.set-pr-22  Агентство
+                        +e('link-jackdaw', {}, 'label')(for="jackdaw").icon
+                    +e('link', {}, 'a').link Блог
+                    +e('link', {}, 'a').link Контакты
+            +b('call')
+                +e('number').set-pl-65 8 (903) 920-00-19
+                    +e('link-telephone', {}, 'label')(for="telephone").icon
+                +e('button').brand-button.phone_button.link-red.no-line.set-mt-13 ЗАКАЗАТЬ ЗВОНОК
+                    +icon('phone_button').icon_button.set-mr-12
+            +b('night')&attributes(attributes)
+                +e('moon', {}, 'label')(for="moon").icon

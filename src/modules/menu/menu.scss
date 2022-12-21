@@ -1,0 +1,133 @@
+.flex {
+    position: relative;
+}
+
+.logo {
+    &__background{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 435px;
+        height: 205px;
+        background-image: url(/src/static/images/circle.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+}
+
+.center {
+    width: 531px;
+    &__search {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 42px;
+        padding: 10px 15px 9px 50px;
+        border-radius: 17px;
+        background: #E8E9EA;
+        color: #ffffff;
+        box-shadow: inset 0px 0px 6px #BABDC0;
+        &-label {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 17px;
+            display: block;
+            width: 20px;
+            height: 20px;
+            transform: translateY(-50%);
+            background-image: url(/src/static/images/search.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &__search input {
+        align-self: center;
+        font-size: 12px;
+        font-weight: 500;
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: #E8E9EA;
+        color: #ffffff;
+        &::placeholder{ 
+        color: #ffffff; 
+        }
+    }
+
+}
+
+.navbar {
+    &__link {
+        margin-right: 50px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    & a {
+        position: relative;
+    }
+
+    &__link-jackdaw {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        right: 6px;
+        width: 10px;
+        height: 6px;
+        transform: translateY(-50%);
+        background-image: url(/src/static/images/jackdaw.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
+.call {
+    &__number {
+        position: relative;
+        font-style: 18px;
+        color: $DarkGray;
+    }
+
+    &__link-telephone {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 35px;
+        width: 21px;
+        height: 21px;
+        transform: translateY(-50%);
+        background-image: url(/src/static/images/telephone.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.night {
+    align-self: flex-end;
+    padding-bottom: 10px;
+    transition: 0.6s;
+    &__moon {
+        z-index: 1;
+        width: 52px;
+        height: 52px;
+        background-image: url(/src/static/images/moon.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+}
