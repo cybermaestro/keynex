@@ -1,3 +1,51 @@
 .header {
   $self: &;
+
+  &__circle {
+    z-index: -2;
+    right: 0;
+    top: 215px;
+  }
+
+  &__target {
+    z-index: -1;
+    right: 0;
+    margin-top: 40px;
+  }
+
+  & img:nth-child(2) {
+    top: 13px;
+    left: 842px;
+    z-index: -1;
+  }
+
+  & img:nth-child(3) {
+    top: 245px;
+    left: 462px;
+    z-index: -1;
+  }
+
+  & img:nth-child(4) {
+    top: 552px;
+    left: 279px;
+    z-index: -1;
+  }
+
+  & img:nth-child(5) {
+    top: 756px;
+    left: 57px;
+    z-index: -1;
+  }
+
+  &__header {
+    font-size: 64px;
+    line-height: 72px;
+    color: $SuperDarkGray;
+  }
+
+  & p {
+    font-size: 18px;
+    line-height: 24px;
+    color: $DarkGray;
+  }
 }
