@@ -1,7 +1,9 @@
 extends ./layouts/default
 include ./modules/head/head
+include ./modules/services/services
 
 block head
   +head({ title: 'Список страниц | KEYNEX' })
     
 block content
+  +services

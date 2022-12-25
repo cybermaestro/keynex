@@ -1,0 +1,36 @@
+
+
+mixin services
+  +b('services').set-mt-470
+    .container  
+        p.set-mt-15 Комплекс услуг под ключ, для увеличения продаж
+        +e('header', {}, 'h2').set-mt-15  Наши услуги
+        +b('cards')&attributes(attributes).d-flex.justify-content-space-between.ja.set-mt-78
+          +e('card').set-mb-50
+            img(src="/src/static/images/card-1.jpg", alt="images").set-h-452
+            +e('info').set-pl-48.set-mb-74
+              +e('header', {}, 'h3').set-mt-50 Email-маркетинг
+                ul.set-mt-20
+                  each val in ["Анализируем имеющиеся ресурсы", "Собираем и сегментируем клиентскую базу", "Разрабатываем стратегию", "Пишем тексты и создаем шаблоны писем", "Запускаем рассылку и анализируем реакцию клиентов"]
+                    li= val
+          +e('card').set-mb-50
+            img(src="/src/static/images/card-2.jpg", alt="images").set-h-452
+            +e('info').set-pl-48.set-mb-74
+              +e('header', {}, 'h3').set-mt-50 CRM-маркетинг
+                ul.set-mt-20
+                  each val in ["Собираем и анализируем данные о клиентах", "Подбираем персональные предложения", "Определяем и внедряем каналы для коммуникации", "Рассылаем персональные предложения, когда они актуальны", "Получаем готовых к покупке клиентов"]
+                    li= val
+          +e('card')
+            img(src="/src/static/images/card-3.jpg", alt="images").set-h-452
+            +e('info').set-pl-48.set-mb-74
+              +e('header', {}, 'h3').set-mt-50 Телемаркетинг
+                ul.set-mt-20
+                  each val in ["Обзваниваем потенциальных клиентов","Ведем разговор по проработанному скрипту","Рассказываем о преимуществах продукта","Подогреваем интерес акциями и скидками","Передаем теплого клиента отделу продаж"]
+                    li= val
+          +e('card')
+            img(src="/src/static/images/card-4.jpg", alt="images").set-h-452
+            +e('info').set-pl-48.set-mb-74
+              +e('header', {}, 'h3').set-mt-50 Контент-маркетинг
+                ul.set-mt-20
+                  each val in ["Создаем полезный и интересный контент", "Показываем вашу экспертность", "Повышаем уровень доверия к компании", "Закрываем возражения", "Подводим к покупке"]
+                    li= val

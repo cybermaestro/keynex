@@ -1,0 +1,56 @@
+.services {
+    $self: &;
+
+    & p {
+        color: $DarkRed;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    &__header {
+        color: $SuperDarkGray;
+        font-size: 56px;
+        line-height: 76px;
+    }
+}
+
+.cards {
+    $self: &;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__card{
+        box-shadow: 3px 1px 35px 15px #E5E5E5;
+        width: 613px;
+        border-radius: 30px 30px 0 0;
+    }
+
+    &__card:hover {
+        .cards__header {
+            color: $DarkRed;
+        }
+    }
+
+    & img {
+        width: 613px;
+        border-radius: 30px 30px 0 0;
+    }
+
+    &__header {
+        color: $SuperDarkGray;
+        font-size: 32px;
+        line-height: 40px;
+        transition: 0.6s;
+    }
+
+    &__info ul {
+        color: $DarkGray;
+        font-size: 18px;
+        line-height: 24px;
+        padding-left: 20px;
+        list-style-type: disc;
+    }
+
+    
+}
