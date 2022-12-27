@@ -1,0 +1,64 @@
+.cases {
+    $self: &;
+
+    &__header {
+        color: $SuperDarkGray;
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    & p {
+        color: $DarkGray;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    & img:nth-child(1) {
+        top: 0;
+        left: 0;
+    }
+
+    & img:nth-child(2) {
+        top: 640px;
+        left: 110px;
+    }
+
+    & img:nth-child(3) {
+        top: 272px;
+        left: 1175px;
+    }
+}
+
+
+.buttons {
+    $self: &;
+    justify-content: space-between;
+    padding: 0 150px;
+    
+    &__case {
+        border-radius: 20px;
+        transition: 0.6s;
+        &:hover {
+            background: linear-gradient(#FFFFFF, #F0F0F0);
+        }
+    }
+    
+    &__emblem {
+        background-color: $SuperDarkGray;
+        border-radius: 5px;
+        padding: 6px;
+    }
+
+    &__indicators {
+        color: $DarkRed;
+        font-size: 56px;
+        line-height: 76px;
+    }
+
+    & p {
+        color: $DarkGray;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+}

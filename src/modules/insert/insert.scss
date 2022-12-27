@@ -1,0 +1,17 @@
+.insert {
+    $self: &;
+
+    &__box {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 45px;
+        background: linear-gradient(#FFFFFF, #F0F0F0);
+        border-radius: 20px;
+    }
+
+    &__header {
+        color: $SuperDarkGray;
+        font-size: 32px;
+        line-height: 40px;
+    }
+}

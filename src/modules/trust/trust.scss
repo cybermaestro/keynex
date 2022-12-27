@@ -1,0 +1,62 @@
+.trust {
+    $self: &;
+
+    & img:nth-child(1){
+        top: -122px;
+        right: 38px;
+    }
+
+    & img:nth-child(2){
+        top: -30px;
+        left: 182px;
+    }
+
+    & img:nth-child(3){
+        top: 270px;
+        right: 290px;
+    }
+
+    & img:nth-child(4){
+        top: 530px;
+        left: 454px;
+    }
+
+    &__header {
+        color: $SuperDarkGray;
+        font-size: 56px;
+        line-height: 72px;
+    }
+
+    &__card {
+        &:hover {
+            .trust__circle {
+                background: #DFDFDF;
+            };
+        }
+    }
+
+    &__circle {
+        color: $DarkRed;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 66px;
+        width: 86px;
+        height: 86px;
+        border-radius: 50%;
+        background: linear-gradient(to left, #F5F7F9, #DFDFDF);
+        transition: 0.7s;
+
+    }
+
+    & h4 {
+        color: $SuperDarkGray;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    & p {
+        color: $DarkGray;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

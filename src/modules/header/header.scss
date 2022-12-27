@@ -48,4 +48,12 @@
     line-height: 24px;
     color: $DarkGray;
   }
+
+  &__tagline {
+    color: $DarkRed;
+    font-size: 20px;
+    line-height: 2px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }

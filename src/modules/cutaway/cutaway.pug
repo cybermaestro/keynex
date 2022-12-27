@@ -1,0 +1,14 @@
+mixin cutaway
+  +b('cutaway').set-pt-110.set-pb-120
+    .container
+        +e('box').d-flex.justify-content-between
+            +e('photo').position-relative
+                img(src="/src/static/images/cutaway_photo.png", alt="photo").set-w-590.set-h-590
+                img(src="/src/static/images/cutaway_red-big.svg", alt="circle").position-absolute.set-w-110.set-h-110
+                img(src="/src/static/images/cutaway_grey-small.svg", alt="circle").position-absolute.set-w-26.set-h-26
+                img(src="/src/static/images/cutaway_red-small.svg", alt="circle").position-absolute.set-w-26.set-h-26
+            +e('info')
+                img(src="/src/static/images/quotes.svg", alt="quotes").set-w-59.set-h-45
+                p.set-mt-34 15 лет я руковожу отделом продаж и маркетинга в нашей компании. За </br>это время наладила коммуникации, заключив договора с такими </br>крупными игроками рынка, как Евраз, Русал, Полюс, Русский уголь, </br>Суэк, Полиметал, Komatsu, Libherr и др.</br></br>Мы готовы делиться своим опытом т.к. понимаем заказчиков, как никто </br>другой, и помогаем построить долгосрочные отношения с клиентами.
+                +e('username').set-mt-45 <span>Марина Викторовна Сергеева</span> </br>Основатель агенства, эксперт в сфере продаж и маркетинга
+                +e('button').brand-button.link-red.no-line.set-mt-104 о компании
