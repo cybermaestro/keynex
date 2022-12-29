@@ -1,3 +1,141 @@
 .footer {
   $self: &;
+  background: #E5E5E5;
+
+  &__img-1 {
+    width: 20px;
+    height: 20px;
+    background-image: url(/src/static/images/footer_telephone.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__img-2 {
+    width: 19px;
+    height: 15px;
+    background-image: url(/src/static/images/footer_mail.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__img-3 {
+    width: 17px;
+    height: 20px;
+    background-image: url(/src/static/images/footer_address.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__form {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 72px;
+    padding: 9px 15px 9px 9px;
+    border-radius: 50px;
+    background: #ffffff;
+    color: $Gray;
+    &-label {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 34px;
+      display: block;
+      width: 19px;
+      height: 15px;
+      transform: translateY(-50%);
+      background-image: url(/src/static/images/footer_input-mail.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &__social-link {
+    display: block;
+    }
+
+  & input {
+    align-self: center;
+    font-size: 16px;
+    line-height: 24px;
+    width: 235px;
+    height: 100%;
+    border: none;
+    background: #ffffff;
+    color: $SuperDarkGray;
+    margin-left: 73px;
+    &::placeholder{ 
+    color: $Gray; 
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 6px;
+    right: 9px;
+  }
+
+
+  & hr {
+    border: none; 
+    background-color: $Gray;
+    color: $Gray; 
+    height: 2px;
+  }
+
+  & a {
+    font-size: 18px;
+    line-height: 28px;
+    color: $DarkGray;
+    text-decoration: none;
+  }
+
+  & p {
+    color: $DarkGray;
+    font-size: 18px;
+    line-height: 44px;
+  };
+
+  &__follow {
+    & p {
+      color: $SuperDarkGray;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  & h2 {
+    font-weight: 700;
+    color: $SuperDarkGray;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  & h3 {
+    font-weight: 700;
+    color: $SuperDarkGray;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 23px;
+  }
+
+  & a:hover {
+    color: $Red;
+  }
+
+  &__button a {
+    color: #FFFFFF;
+  }
+
+  &__bottom a {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
 }

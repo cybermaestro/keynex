@@ -1,0 +1,82 @@
+.consultation {
+    $self: &;
+
+    background-color: $ExtraBrightGray;
+    opacity: 0.99;
+    
+    & img:nth-child(1) {
+        top: 0;
+        right: 0;
+        z-index: -1;
+      }
+
+    & img:nth-child(2) {
+        top: 482px;
+        left: 0;
+        z-index: -1;
+      }
+
+    &__header {
+        font-weight: 700;
+        color: $SuperDarkGray;
+        font-size: 56px;
+        line-height: 76px;
+    }
+
+    & p {
+        color: $SuperDarkGray;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__forma {
+        background: #FFFFFF;
+        border-radius: 30px;
+        padding: 50px;
+    }
+
+    &__consultation-input {
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+        height: 42px;
+        padding: 21px 30px 15px 24px;
+        border-radius: 50px;
+        background: #FFFFFF;
+        color: $SuperDarkGray;
+        border: 0.5px solid $Gray;
+        &::placeholder{ 
+            color: $Gray; 
+            }
+    }
+
+    &__button {
+        & a {
+            color: #FFFFFF;
+        }
+    };
+
+}
+
+.agreement {
+    align-items: center;
+    color: $SuperDarkGray;
+    font-size: 32px;
+    line-height: 24px;
+    &__box {
+        width: 20px;
+        height: 20px;
+        border: 1px solid $Gray;
+        border-radius: 5px;
+    }
+
+    & p {
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    & a {
+        color: $Red;
+    }
+}

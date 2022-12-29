@@ -1,8 +1,8 @@
 mixin questions
-  +b('questions').set-pb-100
+  +b('questions').set-pb-200
     .container
         +e('header', {}, 'h3').text-center.set-mb-80 Наши эксперты отвечают </br>на часто задаваемые вопросы
-        +b('question', {m: '1'})&attributes(attributes).d-flex
+        +b('question', {})&attributes(attributes).d-flex
             +e('jackdaw').set-w-46.set-h-46
                 img(src="/src/static/images/jackdaw.svg", alt="jackdaw").set-w-16.set-h-14
             +e('header', {}, 'h3') В чем ваша уникальность, почему мы должны выбрать именно ваше агенство?
