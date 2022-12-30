@@ -5,17 +5,16 @@ mixin trust
     img(src="/src/static/images/trust_kuy.svg", alt="kuy").position-absolute.set-w-33.set-h-35
     img(src="/src/static/images/key_grey-small.svg", alt="kuy").position-absolute.set-w-33.set-h-35
     .container
-        +e('header', {}, 'h3').set-mt-160 Три причины доверить нам коммуникацию </br>с вашими клиентами
+        +e('header', {}, 'h3').set-mt-160.fz-56.lh-72 Три причины доверить нам коммуникацию </br>с вашими клиентами
         +e('cards').d-flex.justify-content-between.set-pt-68
-            +e('card')
-                +e('circle').set-pt-10.text-center 1
-                h4.set-mt-40 Экономим Ваши деньги и не </br>сливаем бюджет в пустую
-                p.set-mt-20 Вы знаете за что платите. Стоимость формируется </br>из конкретных задач.
-            +e('card')
-                +e('circle').set-pt-10.text-center 2
-                h4.set-mt-40 Используем инструменты только </br>проверенные на личном опыте
-                p.set-mt-20 Подтверждаем экспертность 15-и летним  опытом </br>в бизнесе.
-            +e('card')
-                +e('circle').set-pt-10.text-center 3
-                h4.set-mt-40 Всегда держим ситуацию под </br>контролем
-                p.set-mt-20 Оцениваем уровень удовлетворенности клиентов </br>на всех этапах сотрудничества.
+            -
+                cards = [
+                    {number: '1', header: 'Экономим Ваши деньги и не </br>сливаем бюджет в пустую', text: 'Вы знаете за что платите. Стоимость формируется </br>из конкретных задач.'},
+                    {number: '2', header: 'Используем инструменты только </br>проверенные на личном опыте', text: 'Подтверждаем экспертность 15-и летним  опытом </br>в бизнесе.'},
+                    {number: '3', header: 'Всегда держим ситуацию под </br>контролем', text: 'Оцениваем уровень удовлетворенности клиентов </br>на всех этапах сотрудничества.'},
+                ]
+            for card, index in cards
+                +e('card')
+                    +e('circle').set-pt-10.text-center.fz-48.lh-66= card.number
+                    h4.set-mt-40.fz-24.lh-32!= card.header
+                    p.set-mt-20.fz-16.lh-24!= card.text

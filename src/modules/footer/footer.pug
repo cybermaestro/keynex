@@ -4,26 +4,26 @@ mixin footer(data = {})
   +b('footer', {}, 'footer')&attributes(attributes).set-pt-66
     .container
       +e('box').d-flex.justify-content-between
-        +e('Services')
+        +e('Services').fz-18.lh-44
           h3 Услуги
           each val in ["Email-маркетинг", "CRM-маркетинг", "Телемаркетинг", "Контент-маркетинг"]
             p
               a(href="#")= val
-        +e('Agency')
+        +e('Agency').fz-18.lh-44
           h3 Агентство
           each val in ["O нас", "Карьера", "Блог"]
             p
               a(href="#")= val
-        +e('Contacts').set-w-260
+        +e('Contacts').set-w-260.fz-18.lh-28
           h3 Контакты
           +e('telephone').d-flex.align-items-center.set-mb-12
-            +e('img-1').set-mr-17
+            +e('img-1').set-mr-17.set-w-20.set-h-20
             a(href="#") 8 (903) 920-00-19
           +e('mail').d-flex.align-items-center.set-mt-12
-            +e('img-2').set-mr-17
+            +e('img-2').set-mr-17.set-w-19.set-h-15
             a(href="#") info@keynex.ru
           +e('address').d-flex.set-mt-12
-            +e('img-3').set-mr-17
+            +e('img-3').set-mr-17.set-w-17.set-h-20
             a(href="#") г. Красноярск, </br>ул. Караульная 3, </br>офис 301
         +e('network')
           h3 Соцсети
@@ -34,17 +34,18 @@ mixin footer(data = {})
           +e('social-link', {}, 'a')(href="#").set-mt-24.set-w-28.set-h-16
             +icon('vk')
         +e('follow')
-          h2 Следите за нами
-          p Рассказываем, как повысить продажи и сохранить лояльность </br>клиентов. Показываем кейсы из разных сфер В2В и В2С. Пишем не </br>чаще двух раз в неделю!
-          +e('form', {}, 'form')(action="#").set-mt-56
+          h2.fz-32.lh-40 Следите за нами
+          p.fz-16.lh-24 Рассказываем, как повысить продажи и сохранить лояльность </br>клиентов. Показываем кейсы из разных сфер В2В и В2С. Пишем не </br>чаще двух раз в неделю!
+          +e('form', {}, 'form')(action="#").set-mt-56.w-100.set-h-72
               +e('form-label', {}, 'label')(for="search").icon
               +e('form-input', {}, 'input')(
                   type="text"
                   placeholder="Ваш Email"
-                  name="mail"
-                  )
-              +e('button').brand-button.red.no-line.set-w-167 <a href="#">Подписаться</a>
+                  name="mailk"
+                  ).fz-16.lh-24.set-w-235.h-100
+              +e('button').brand-button.red.set-w-167 
+                a(href="#").link Подписаться
       hr
-      +e('bottom').d-flex.justify-content-between.set-pt-24.set-pb-26
+      +e('bottom').d-flex.justify-content-between.set-pt-24.set-pb-26.fz-16.lh-24
         a(href="#") Keynex
         a(href="#") Политика конфиденциальности

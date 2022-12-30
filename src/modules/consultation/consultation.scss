@@ -19,14 +19,10 @@
     &__header {
         font-weight: 700;
         color: $SuperDarkGray;
-        font-size: 56px;
-        line-height: 76px;
     }
 
     & p {
         color: $SuperDarkGray;
-        font-size: 24px;
-        line-height: 32px;
     }
 
     &__forma {
@@ -76,7 +72,7 @@
         line-height: 24px;
     }
 
-    & a {
-        color: $Red;
+    & a:hover {
+        color: $DarkRed !important;
     }
 }

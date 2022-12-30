@@ -3,8 +3,8 @@ mixin consultation
     img(src="/src/static/images/consultation_red-big.png", alt="kuy").position-absolute.set-w-716.set-h-716
     img(src="/src/static/images/consultation_grey-big.png", alt="kuy").position-absolute.set-w-400.set-h-400
     .container
-        +e('header', {}, 'h2') Расскажите о Вашей задаче
-        p.set-mt-20 Получите консультацию в подарок
+        +e('header', {}, 'h2').fz-56.lh-76 Расскажите о Вашей задаче
+        p.set-mt-20.fz-24.lh-32 Получите консультацию в подарок
         +e('forma', {}, 'form').w-100
             +e('consultation-input', {}, 'input')(
                         type="text"
@@ -31,5 +31,7 @@ mixin consultation
                 p.set-ml-16 Согласен на обработку моих персональных данных
             +b('agreement').d-flex.set-mt-10
                 +e('box', {}, 'input')(tabindex="6" type="checkbox" name="agreement" value="yes")
-                p.set-ml-16 Согласен <a href="#">с политикой конфиденциальности</a>
-            +e('button').brand-button.red.no-line.set-mt-50.w-100 <a href="#">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+                p.set-ml-16 Согласен 
+                    a(href="#").link-red с политикой конфиденциальности
+            +e('button').brand-button.red.set-mt-50.w-100 
+                a(href="#").link ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ

@@ -23,8 +23,6 @@
 
     &__header {
         color: $SuperDarkGray;
-        font-size: 56px;
-        line-height: 72px;
     }
 
     &__card {
@@ -37,9 +35,7 @@
 
     &__circle {
         color: $DarkRed;
-        font-size: 48px;
         font-weight: 500;
-        line-height: 66px;
         width: 86px;
         height: 86px;
         border-radius: 50%;
@@ -50,13 +46,9 @@
 
     & h4 {
         color: $SuperDarkGray;
-        font-size: 24px;
-        line-height: 32px;
     }
 
     & p {
         color: $DarkGray;
-        font-size: 16px;
-        line-height: 24px;
     }
 }

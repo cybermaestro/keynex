@@ -62,6 +62,17 @@
           padding-bottom: #{$size}px;
         }
       }
-    }
+
+      .fz {
+        &-#{$size} {
+          font-size: #{$size}px;
+        }
+      }
+      .lh {
+        &-#{$size} {
+          line-height: #{$size}px;
+        }
+      }
   }
+}
   

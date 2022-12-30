@@ -1,15 +1,16 @@
-.link-red {
-    color: $Red;
-    text-decoration: underline;
-  
-    &.no-line {
-      text-decoration: none;
-    }
-}
+
 
 .link {
-  color: $SuperDarkGray;
+  color: #FFFF !important;
   text-decoration: none;
+
+  &-grey {
+    color: $SuperDarkGray !important;
+  }
+
+  &-red {
+    color: $Red ;
+  }
   
   &.line {
     text-decoration: underline;
