@@ -38,22 +38,15 @@
   }
 
   &__header {
-    font-size: 64px;
-    line-height: 72px;
     color: $SuperDarkGray;
   }
 
   & p {
-    font-size: 18px;
-    line-height: 24px;
     color: $DarkGray;
   }
 
   &__tagline {
     color: $DarkRed;
-    font-size: 20px;
-    line-height: 2px;
-    text-align: center;
     text-transform: uppercase;
   }
 }

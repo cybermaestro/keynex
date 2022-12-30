@@ -33,5 +33,4 @@ mixin consultation
                 +e('box', {}, 'input')(tabindex="6" type="checkbox" name="agreement" value="yes")
                 p.set-ml-16 Согласен 
                     a(href="#").link-red с политикой конфиденциальности
-            +e('button').brand-button.red.set-mt-50.w-100 
-                a(href="#").link ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+            +e('button', {}, 'a')(href="#").link.brand-button.red.set-mt-50.w-100 ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ

@@ -3,14 +3,10 @@
 
     & p {
         color: $DarkRed;
-        font-size: 20px;
-        line-height: 27px;
     }
 
     &__header {
         color: $SuperDarkGray;
-        font-size: 56px;
-        line-height: 76px;
     }
 }
 
@@ -47,9 +43,17 @@
     &__info ul {
         color: $DarkGray;
         font-size: 18px;
-        line-height: 24px;
+        line-height: 30px;
         padding-left: 20px;
         list-style-type: disc;
+    }
+
+    &__card:nth-child(1) {
+        margin-bottom: 50px;
+    }
+
+    &__card:nth-child(2) {
+        margin-bottom: 50px;
     }
 
     

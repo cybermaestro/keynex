@@ -4,18 +4,18 @@ mixin cases
     img(src="/src/static/images/case_circle-grey.jpg", alt="circle").position-absolute.set-w-48.set-h-48
     img(src="/src/static/images/case_kuy.svg", alt="kuy").position-absolute.set-w-25.set-h-27
     .container
-        +e('header', {}, 'header').set-mt-38 Единственное маркетинговое агентство </br>в Красноярске, которое организовано владельцем </br>действующего крупного бизнеса.
-        p.set-mt-38 Мы не теоретики, а практики. Лучший кейс подтверждающий наш опыт – это наша компания, где </br>80% заказчиков являются постоянными и приносят основной доход компании.
+        +e('header', {}, 'header').set-mt-38.fz-32.lh-44 Единственное маркетинговое агентство </br>в Красноярске, которое организовано владельцем </br>действующего крупного бизнеса.
+        p.set-mt-38.fz-18.lh-24 Мы не теоретики, а практики. Лучший кейс подтверждающий наш опыт – это наша компания, где </br>80% заказчиков являются постоянными и приносят основной доход компании.
         +b('buttons')&attributes(attributes).d-flex.set-mt-87.set-mb-186
-            +e('case').set-w-306.set-h-344.text-center
-                +e('emblem', {}, 'img')(src="/src/static/images/growth.svg", alt="emblem").set-w-32.set-h-32.set-mt-96
+            +e('case', {}, 'a')(href="#").d-flex.flex-column.align-items-center.set-w-306.set-h-344
+                +e('emblem', {}, 'img')(src="/src/static/images/growth.svg", alt="emblem").d-block.set-w-32.set-h-32.set-mt-96
                 +e('indicators').set-mt-26 + 58%
                 p.set-mt-10 Рост конверсии </br>с обращения в заказ
-            +e('case').set-w-306.set-h-344.text-center
-                +e('emblem', {}, 'img')(src="/src/static/images/schedule.svg", alt="emblem").set-w-32.set-h-32.set-mt-96
+            +e('case', {}, 'a')(href="#").d-flex.flex-column.align-items-center.set-w-306.set-h-344.text-center
+                +e('emblem', {}, 'img')(src="/src/static/images/schedule.svg", alt="emblem").d-block.set-w-32.set-h-32.set-mt-96
                 +e('indicators').set-mt-26 х 14,6
                 p.set-mt-10 Увеличение продаж </br>основных групп товаров
-            +e('case').set-w-306.set-h-344.text-center
-                +e('emblem', {}, 'img')(src="/src/static/images/experience.svg", alt="emblem").set-w-32.set-h-32.set-mt-96
+            +e('case', {}, 'a')(href="#").d-flex.flex-column.align-items-center.set-w-306.set-h-344.text-center
+                +e('emblem', {}, 'img')(src="/src/static/images/experience.svg", alt="emblem").d-block.set-w-32.set-h-32.set-mt-96
                 +e('indicators').set-mt-26 15 лет
                 p.set-mt-10 В продажах </br>и маркетинге

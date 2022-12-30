@@ -72,7 +72,8 @@
 
         &:hover,
         &.hover {
-            background-color: $ExtraBrightGray;
+            color: #FFFF;
+            background-color: $DarkRed;
         }
 
         &:active,
@@ -91,14 +92,15 @@
 
         &:hover,
         &.hover {
-            background-color: $Gray  !important;
+            color: $Red !important;
+            background: $GradientGray !important;
             border: none;
         }
 
         &:active,
         &:focus,
         &.active {
-            background-color: rgba($Gray, 0.5) !important;
+            background-color: rgba($DarkRed, 0.5) !important;
             border: none;
         }
     }

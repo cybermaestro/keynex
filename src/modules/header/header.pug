@@ -11,7 +11,7 @@ mixin header(data)
     img(src="/src/static/images/key_grey-small.svg", alt="kuy").position-absolute.set-w-33.set-h-35
     .container.position-relative
       +e('target',{}, 'img')(src= "/src/static/images/target.svg", alt="target").position-absolute.set-w-525.set-h-578
-      +e('header', {}, 'h1').set-mt-110 Превращаем целевую  </br>аудиторию в клиентов
-      p.set-mt-58 Делаем Ваш бизнес прибыльным, помогая конвертировать </br>трафик в продажи
-      +e('button').brand-button.link-red.no-line.set-w-385.set-mt-60 Получить коммерческое предложение
-      +e('tagline', {}, 'h4').set-mt-390 KEYNEX - Агентство ключевых коммуникаций
+      +e('header', {}, 'h1').fz-64.lh-72.set-mt-110 Превращаем целевую  </br>аудиторию в клиентов
+      p.set-mt-58.fz-18.lh-24 Делаем Ваш бизнес прибыльным, помогая конвертировать </br>трафик в продажи
+      +e('button', {}, 'a')(href="#").brand-button.link-red.set-w-385.set-mt-60 Получить коммерческое предложение
+      +e('tagline', {}, 'h4').set-mt-390.fz-20.lh-27.text-center KEYNEX - Агентство ключевых коммуникаций
