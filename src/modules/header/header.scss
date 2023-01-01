@@ -35,6 +35,13 @@
     top: 756px;
     left: 57px;
     z-index: -1;
+    transition: 0.8s;
+  }
+  
+  & img:nth-child(6) {
+    top: 319px;
+    right: 109px;
+    z-index: 1;
   }
 
   &__header {
@@ -48,5 +55,13 @@
   &__tagline {
     color: $DarkRed;
     text-transform: uppercase;
+  }
+}
+
+.cal {
+  opacity: 0;
+  transition: 1s;
+  &:hover {
+    opacity: 0.7;
   }
 }
