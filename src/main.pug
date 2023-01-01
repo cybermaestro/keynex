@@ -1,7 +1,14 @@
 extends ./layouts/default
 include ./modules/head/head
 include ./modules/header/header
+include ./modules/cases/cases
 include ./modules/services/services
+include ./modules/insert/insert
+include ./modules/plate/plate
+include ./modules/trust/trust
+include ./modules/cutaway/cutaway
+include ./modules/questions/questions
+include ./modules/consultation/consultation
 include ./modules/footer/footer
 
 block head
@@ -12,3 +19,11 @@ block header
   +header({})
 
 block content
+  +cases
+  +services
+  +insert
+  +plate
+  +trust
+  +cutaway
+  +questions
+  +consultation

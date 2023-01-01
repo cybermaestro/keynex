@@ -1,23 +1,20 @@
 extends ./layouts/default
 include ./modules/head/head
-include ./modules/cases/cases
-include ./modules/services/services
-include ./modules/insert/insert
-include ./modules/plate/plate
-include ./modules/trust/trust
-include ./modules/cutaway/cutaway
-include ./modules/questions/questions
-include ./modules/consultation/consultation
+
 
 block head
   +head({ title: 'Список страниц | KEYNEX' })
     
 block content
-  +cases
-  +services
-  +insert
-  +plate
-  +trust
-  +cutaway
-  +questions
-  +consultation
+  - 
+    pages = [
+      { href: '/main.html', title: 'Главная' },
+      { href: './crmMarketing.html', title: 'CRM-маркетинг' },
+    ]
+
+  .page
+    .container
+      ul.pages-list
+        for page in pages
+          li
+            a(href=page.href)= page.title
