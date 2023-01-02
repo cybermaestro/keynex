@@ -1,3 +1,8 @@
 .menu-crm {
-    background: linear-gradient(62.98deg, #DFDFDF -25.47%, #FFFFFF 81.18%);
+    opacity: 0.99;
+    z-index: 1;
 }
+
+.call__button {
+    background-color: rgba(255,101,80,0) !important;
+  }

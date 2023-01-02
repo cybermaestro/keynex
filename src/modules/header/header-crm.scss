@@ -1,49 +1,31 @@
+.header-crm-backend {
+  background: linear-gradient(62.98deg, #DFDFDF -25.47%, #FFFFFF 81.18%);
+  opacity: 0.99;
+
+}
+
+.back {
+  width: 547px;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .header-crm {
     $self: &;
-    background: linear-gradient(62.98deg, #DFDFDF -25.47%, #FFFFFF 81.18%);
-  
-    &__circle {
-      z-index: -2;
-      right: 0;
-      top: 215px;
-    }
-  
-    &__target {
-      z-index: -1;
-      right: 0;
-      margin-top: 40px;
+    height: 722px;
+    opacity: 0.99;
+    
+    & img:nth-child(1) {
+      top: 131px;
+      right: 160px;
     }
   
     & img:nth-child(2) {
-      top: 13px;
-      left: 842px;
+      top: 306px;
+      left: 0;
       z-index: -1;
-    }
-  
-    & img:nth-child(3) {
-      top: 245px;
-      left: 462px;
-      z-index: -1;
-    }
-  
-    & img:nth-child(4) {
-      top: 552px;
-      left: 279px;
-      z-index: -1;
-    }
-  
-    & img:nth-child(5) {
-      top: 756px;
-      left: 57px;
-      z-index: -1;
-      transition: 0.8s;
-    }
-    
-    & img:nth-child(6) {
-      top: 319px;
-      right: 109px;
-      z-index: 1;
-    }
+   }
   
     &__header {
       color: $SuperDarkGray;
@@ -55,9 +37,13 @@
   
     &__tagline {
       color: $DarkRed;
-      text-transform: uppercase;
+    }
+
+    &__button {
+      background: rgba(255,101,80,0);
     }
   }
+
   
   .cal {
     opacity: 0;
@@ -65,4 +51,6 @@
     &:hover {
       opacity: 0.7;
     }
+
+
   }

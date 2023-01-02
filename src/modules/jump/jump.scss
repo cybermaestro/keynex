@@ -1,0 +1,45 @@
+.jump-crm {
+    $self: &;
+    background: radial-gradient(72.08% 158.96% at -18.33% -6.66%, #6C7384 0%, #3F4450 100%);
+    color: $White;
+
+    &__header {
+        font-weight: 700;
+    }
+
+    &__cards {
+        justify-content: space-between;
+    }
+
+    &__card {
+        border-radius: 30px;
+        padding: 35px 0 0 30px;
+
+        &:nth-child(1) {
+            width: 100%;
+            height: 100%;
+            background-image: url(/src/static/images/jump-email.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &:nth-child(2) {
+            width: 100%;
+            height: 100%;
+            background-image: url(/src/static/images/jump-telemarketing.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &:nth-child(3) {
+            width: 100%;
+            height: 100%;
+            background-image: url(/src/static/images/jump-marcketing.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}

@@ -1,12 +1,12 @@
 mixin cases
-  +b('cases').position-relative.text-center
-    img(src="/src/static/images/case_circle-red.jpg", alt="circle").position-absolute.set-w-705.set-h-705
-    img(src="/src/static/images/case_circle-grey.jpg", alt="circle").position-absolute.set-w-48.set-h-48
+  +b('cases').position-relative.text-center.set-pb-186.set-pt-38
+    img(src="/src/static/images/case_circle-red.png", alt="circle").position-absolute.set-w-705.set-h-705
+    img(src="/src/static/images/case_circle-grey.png", alt="circle").position-absolute.set-w-48.set-h-48
     img(src="/src/static/images/case_kuy.svg", alt="kuy").position-absolute.set-w-25.set-h-27
     .container
-        +e('header', {}, 'header').set-mt-38.fz-32.lh-44 Единственное маркетинговое агентство </br>в Красноярске, которое организовано владельцем </br>действующего крупного бизнеса.
+        +e('header', {}, 'header').fz-32.lh-44 Единственное маркетинговое агентство </br>в Красноярске, которое организовано владельцем </br>действующего крупного бизнеса.
         p.set-mt-38.fz-18.lh-24 Мы не теоретики, а практики. Лучший кейс подтверждающий наш опыт – это наша компания, где </br>80% заказчиков являются постоянными и приносят основной доход компании.
-        +b('buttons')&attributes(attributes).d-flex.set-mt-87.set-mb-186
+        +b('buttons')&attributes(attributes).d-flex.set-mt-87
             +e('case', {}, 'a')(href="#").d-flex.flex-column.align-items-center.set-w-306.set-h-344
                 +e('emblem', {}, 'img')(src="/src/static/images/growth.svg", alt="emblem").d-block.set-w-32.set-h-32.set-mt-96
                 +e('indicators').set-mt-26 + 58%

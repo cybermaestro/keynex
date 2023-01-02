@@ -1,6 +1,10 @@
 extends ./layouts/default
 include ./modules/head/head
-include ./modules/cases/cases
+include ./modules/cases/cases-crm
+include ./modules/consultation/consultation
+include ./modules/compatibility/compatibility-crm
+include ./modules/jump/jump-crm
+include ./modules/usage/usage-crm
 
 
 block head
@@ -10,4 +14,8 @@ block header
     +header-crm
 
 block content
-    +cases
+    +cases-crm
+    +compatibility-crm
+    +usage-crm
+    +jump-crm
+    +consultation

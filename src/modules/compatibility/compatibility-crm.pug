@@ -1,0 +1,12 @@
+mixin compatibility-crm
+  +b('compatibility-crm').set-pb-186.set-pt-118
+    .container
+        +e('header').fz-56.lh-72 Кому подойдет CRM-маркетинг?
+        p.set-mt-24.set-mb-80.fz-18.lh-24 Бизнесу, в котором есть повторные покупки и постоянные клиенты
+        +e('box').d-flex.justify-content-space-between
+            -cards = [{img: '/src/static/images/card-crm-1.png', text: 'Сегмент B2B </br>(бизнес для </br>бизнеса)'}, {img: '/src/static/images/card-crm-2.png', text: 'Сфера B2C с </br>большим потоком </br>клиентов'}, {img: '/src/static/images/card-crm-3.png', text: 'HoReCa (отели и </br>рестораны)'},  {img: '/src/static/images/card-crm-4.png', text: 'Ритейл </br>(розничная </br>массовая </br>торговля)'}, {img: '/src/static/images/card-crm-4.png', text: 'FMCG (товары </br>повседневного </br>спроса)'}, {img: '/src/static/images/card-crm-6.png', text: 'Е-commerce </br>(электронная </br>торговля)'}]
+            for card, index in cards
+                a(href="#") 
+                    +e('card').d-flex
+                        img(src= card.img, alt="img").set-w-105.set-h-100
+                        p.fz-24.lh-32!= card.text

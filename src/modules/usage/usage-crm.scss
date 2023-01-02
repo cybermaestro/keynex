@@ -1,0 +1,63 @@
+.usage-crm {
+    $self: &;
+    color: $SuperDarkGray;
+
+    & img:nth-child(1) {
+        top: 0;
+        left: 0;
+        width: 413px;
+        z-index: -1;
+    }
+
+    & img:nth-child(2) {
+        top: 444px;
+        right: 0;
+        width: 1047px;
+        height: 1341px;
+        z-index: -1;
+    }
+
+    &__header {
+        font-weight: 700;
+    }
+
+    &__box {
+        flex-direction: column;
+    }
+
+    &__card {
+
+        &:nth-child(even) {
+            align-self: flex-end;
+            & img {
+                order: 1;
+                margin-right: 0;
+                margin-left: 55px;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        & img {
+            border-radius: 30px;
+        }
+
+        & h3 {
+            color: $DarkRed;
+        }
+
+        & h2 {
+            font-weight: 700;
+        }
+
+        & li {
+            color: $DarkGray;
+        }
+
+        & ul {
+            list-style-type: disc;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+mixin usage-crm
+  +b('usage-crm').set-pb-144.set-pt-119.position-relative
+    img(src="/src/static/images/usage-circle-grey.png", alt="circle").position-absolute
+    img(src="/src/static/images/usage-circle-big.png", alt="circle").position-absolute
+    .container
+        +e('header').set-mb-100.fz-56.lh-72.text-center Мы точно знаем, как эффективно </br>использовать CRM-маркетинг
+        +e('box').d-flex
+            - 
+                cards = [
+                    {img: '/src/static/images/usage-crm_card-1.png', number: 'Шаг 1', header: 'Проводим </br>подготовительные работы', ul: ["Оцениваем текущие CRM-коммуникации", "Ставим цели и задачи, определяем KPI", "Изучаем ЦА компании и определяем особенности продукции"]},
+                    {img: '/src/static/images/usage-crm_card-2.png', number: 'Шаг 2', header: 'Разрабатываем CRM-стратегию', ul: ["Собираем, анализируем и сегментируем клиентскую </br>базу", "Выбираем каналы для взаимодействия с </br>пользователями", "Продумываем сценарии обращения (содержание, </br>формат, частота контактов)"]},
+                    {img: '/src/static/images/usage-crm_card-3.png', number: 'Шаг 3', header: 'Готовим персонализированные </br>предложения для клиентов', ul: ["Создаем email-рассылки под ключ: пишем тексты, </br>продумываем дизайн и верстаем", "Пишем краткие и ненавязчивые push-уведомления, </br>тексты для сообщений в мессенджерах и sms", "Интегрируем все каналы в одну систему"]},
+                    {img: '/src/static/images/usage-crm_card-4.png', number: 'Шаг 4', header: 'Проверяем эффективность', ul: ["Собираем статистику и анализируем результаты", "Подбираем способы улучшения метрик и тестируем </br>гипотезы", "Корректируем CRM-стратегию"]}
+                ]
+            for card, index in cards
+                +e('card').d-flex.set-mb-126
+                    img(src= card.img, alt="img").set-w-416.set-h-416.set-mr-55
+                    +e('info').set-pt-55
+                        h3.fz-20.lh-27= card.number 
+                        h2.set-mt-19.fz-32.lh-40!= card.header
+                        ul.set-mt-50.fz-18.lh-31
+                            - item= card.ul
+                            for x in item
+                                li!= x
