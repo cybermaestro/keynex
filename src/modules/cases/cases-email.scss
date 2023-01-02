@@ -1,0 +1,50 @@
+.cases-email {
+    $self: &;
+    color: $White;
+    background: $SuperDarkGray;
+    opacity: 0.99;
+
+    & img:nth-child(1) {
+        top: 0;
+        left: 0;
+    }
+
+    & img:nth-child(2) {
+        top: 640px;
+        left: 110px;
+    }
+}
+
+
+.buttons-email {
+    $self: &;
+    justify-content: space-between;
+    padding: 0 150px;
+    
+    &__case {
+        border-radius: 20px;
+        transition: 0.6s;
+        &:hover {
+            background: linear-gradient(180deg, #3F4450 0%, #4F5460 100%);;
+        }
+    }
+    
+    &__emblem {
+        background: $White;
+        border-radius: 5px;
+        padding: 6px;
+    }
+
+    &__indicators {
+        color: $DarkRed;
+        font-size: 56px;
+        line-height: 76px;
+    }
+
+    & p {
+        color: $White;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+}

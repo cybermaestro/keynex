@@ -1,0 +1,24 @@
+extends ./layouts/default
+include ./modules/head/head
+include ./modules/consultation/consultation
+include ./modules/cases/cases-email
+include ./modules/trust/trust-email
+include ./modules/compatibility/compatibility-email
+include ./modules/advertising/advertising
+include ./modules/usage/usage-email
+include ./modules/price/price-email
+
+block head
+  +head({ title: 'Email-маркетинг' })
+
+block header
+    +header-email
+
+block content
+    +cases-email
+    +trust-email
+    +compatibility-email
+    +advertising
+    +usage-email
+    +price-email
+    +consultation

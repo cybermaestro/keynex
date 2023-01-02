@@ -1,0 +1,12 @@
+extends ./layouts/default
+include ./modules/head/head
+include ./modules/consultation/consultation
+
+block head
+  +head({ title: 'Контент-маркетинг' })
+
+block header
+    +header-crm
+
+block content
+    +consultation

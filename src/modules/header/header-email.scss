@@ -1,0 +1,56 @@
+.header-email-backend {
+    background: linear-gradient(62.98deg, #DFDFDF -25.47%, #FFFFFF 81.18%);
+    opacity: 0.99;
+  
+  }
+  
+  .back {
+    width: 547px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .header-email {
+      $self: &;
+      height: 722px;
+      opacity: 0.99;
+      
+      & img:nth-child(1) {
+        top: 131px;
+        right: 160px;
+      }
+    
+      & img:nth-child(2) {
+        top: 306px;
+        left: 0;
+        z-index: -1;
+     }
+    
+      &__header {
+        color: $SuperDarkGray;
+      }
+    
+      & p {
+        color: $DarkGray;
+      }
+    
+      &__tagline {
+        color: $DarkRed;
+      }
+  
+      &__button {
+        background: rgba(255,101,80,0);
+      }
+    }
+  
+    
+    .cal {
+      opacity: 0;
+      transition: 1s;
+      &:hover {
+        opacity: 0.7;
+      }
+  
+  
+    }

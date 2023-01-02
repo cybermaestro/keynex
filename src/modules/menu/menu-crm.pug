@@ -18,7 +18,7 @@ mixin menu-crm
                     +e('services').position-relative
                         +e('link', {m: '1'}, 'a')(href="#").link.set-pr-22   Услуги
                         +e('active').position-absolute
-                            - services = [{name: "Email-маркетинг", href: "#"}, {name: "CRM-маркетинг", href: "/crmMarketing.html"}, {name: "Телемаркетинг", href: "#"}, {name: "Контент-маркетинг", href: "#"}]
+                            - services = [{name: "Email-маркетинг", href: "/email.html"}, {name: "CRM-маркетинг", href: "/crmMarketing.html"}, {name: "Телемаркетинг", href: "/telemarketing.html"}, {name: "Контент-маркетинг", href: "/con-marcketing.html"}]
                                 for i, index in services
                                     +e('block', {}, 'a')(href= i.href).d-block.link.fz-14.lh-30= i.name
                     +e('link-jackdaw', {}, 'label')(for="jackdaw")

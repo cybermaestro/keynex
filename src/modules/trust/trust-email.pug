@@ -1,0 +1,21 @@
+mixin trust-email
+  +b('trust-email').position-relative.set-pb-200.set-pt-160
+    img(src="/src/static/images/trust-email_circle.png", alt="circle").position-absolute.set-w-144.set-h-144
+    img(src="/src/static/images/key_red-small.svg", alt="kuy").position-absolute.set-w-25.set-h-27
+    img(src="/src/static/images/trust_kuy.svg", alt="kuy").position-absolute.set-w-33.set-h-35
+    img(src="/src/static/images/key_grey-small.svg", alt="kuy").position-absolute.set-w-33.set-h-35
+    img(src="/src/static/images/trust-email-circle-big.png", alt="circle").position-absolute
+    .container
+        +e('header', {}, 'h3').fz-56.lh-72 Чем хорош email-маркетинг 
+        +e('cards').d-flex.justify-content-between.set-pt-68
+            -
+                cards = [
+                    {number: '1', header: 'Прогревает новых клиентов', text: 'Низкая стоимость привлечения клиента по </br>сравнению с другими каналами интернет рекламы'},
+                    {number: '2', header: 'Стимулирует повторные продаж', text: 'Активирует спящую аудиторию с помощью </br>грамотно настроенных ворон продаж'},
+                    {number: '3', header: 'Мгновенно оповещает тысячи </br>клиентов', text: 'В течении нескольких часов о главных событиях, </br>акциях и спец. предложениях'},
+                ]
+            for card, index in cards
+                +e('card')
+                    +e('circle').set-pt-10.text-center.fz-48.lh-66= card.number
+                    h4.set-mt-40.fz-24.lh-32!= card.header
+                    p.set-mt-20.fz-16.lh-24!= card.text

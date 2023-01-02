@@ -6,7 +6,7 @@ mixin footer(data = {})
       +e('box').d-flex.justify-content-between
         +e('Services').fz-18.lh-44
           h3 Услуги
-          - services = [{name: "Email-маркетинг", href: "#"}, {name: "CRM-маркетинг", href: "/crmMarketing.html"}, {name: "Телемаркетинг", href: "#"}, {name: "Контент-маркетинг", href: "#"}]
+          - services = [{name: "Email-маркетинг", href: "/email.html"}, {name: "CRM-маркетинг", href: "/crmMarketing.html"}, {name: "Телемаркетинг", href: "/telemarketing.html"}, {name: "Контент-маркетинг", href: "/con-marcketing.html"}]
             for i in services
               p
                 a(href= i.href)= i.name

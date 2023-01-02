@@ -1,0 +1,45 @@
+.compatibility-email {
+    $self: &;
+    height: 971px;
+    background: $ExtraBrightGray;
+    color: $SuperDarkGray;
+    opacity: 0.99;
+
+    &__header {
+        font-weight: 700;
+    }
+
+    & p {
+        color: $DarkGray;
+        flex-wrap: wrap;
+    }
+
+    &__box {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        background: $White;
+        justify-content: space-between;
+        border-radius: 30px;
+        width: 416px;
+        height: 200px;
+        align-items: center;
+        padding: 50px;
+
+        &:hover {
+            background: linear-gradient(180deg, #F5F7F9 0%, #F0F0F0 100%);
+            box-shadow: 32px 25px 22px 1px rgba(72, 83, 92, 0.2);
+        }
+
+        & p {
+            color: $SuperDarkGray;
+            font-weight: 700;
+        }
+
+        &:nth-child(1) {
+            margin-bottom: 40px;
+        }
+    }
+}

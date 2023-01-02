@@ -1,0 +1,61 @@
+.trust-email {
+    $self: &;
+
+    & img:nth-child(1){
+        top: 170px;
+        right: 38px;
+    }
+
+    & img:nth-child(2){
+        top: 76px;
+        left: 182px;
+    }
+
+    & img:nth-child(3){
+        top: 365px;
+        right: 290px;
+    }
+
+    & img:nth-child(4){
+        top: 660px;
+        left: 454px;
+    }
+
+    & img:nth-child(5){
+        width: 615px;
+        top: -263px;
+        left: 437px;
+        z-index: -1;
+    }
+
+    &__header {
+        color: $SuperDarkGray;
+    }
+
+    &__card {
+        &:hover {
+            .trust__circle {
+                background: #DFDFDF;
+            };
+        }
+    }
+
+    &__circle {
+        color: $DarkRed;
+        font-weight: 500;
+        width: 86px;
+        height: 86px;
+        border-radius: 50%;
+        background: linear-gradient(to left, #F5F7F9, #DFDFDF);
+        transition: 0.7s;
+
+    }
+
+    & h4 {
+        color: $SuperDarkGray;
+    }
+
+    & p {
+        color: $DarkGray;
+    }
+}

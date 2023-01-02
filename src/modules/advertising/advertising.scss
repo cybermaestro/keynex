@@ -1,0 +1,37 @@
+.advertising {
+    $self: &;
+    background: radial-gradient(101.6% 587.55% at -1.6% -26.31%, #FE4F3E 0%, #C21807 64.68%);
+    padding: 78px 72px 78px 72px;
+    opacity: 0.99;
+    
+    & img:nth-child(1) {
+        width: 456px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    & img:nth-child(2) {
+        top: 30px;
+        left: 634px;
+        z-index: -1;
+    }
+
+    & img:nth-child(3) {
+        top: 188px;
+        right: 342px;
+        z-index: -1;
+    }
+
+    & img:nth-child(4) {
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    &__box {
+        justify-content: space-between;
+        align-items: center;
+        color: $White;
+    }
+}

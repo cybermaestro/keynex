@@ -1,0 +1,20 @@
+mixin compatibility-email
+  +b('compatibility-email').set-pb-186.set-pt-118
+    .container
+        +e('header').fz-56.lh-72 Кому подойдет email-маркетинг?
+        p.set-mt-24.set-mb-80.fz-18.lh-24 Любому бизнесу и является достаточно результативным и недорогим по сравнению с другими </br>платными рекламными инструментами.
+        +e('box').d-flex.justify-content-space-between
+            -
+                cards = [
+                    {img: '/src/static/images/card-crm-6.png', text: 'Идеально для </br>интернет-</br>магазинов'},
+                    {img: '/src/static/images/card-email-2.png', text: 'Практически </br>любые услуги'},
+                    {img: '/src/static/images/card-crm-1.png', text: 'Незаменим в В2В'},
+                    {img: '/src/static/images/card-crm-4.png', text: 'Любые товары </br>народного </br>потребления'},
+                    {img: '/src/static/images/card-email-5.png', text: 'Образование, </br>тренинги, </br>информационные </br>продукты'},
+                    {img: '/src/static/images/card-email-6.png', text: 'Сложные </br>комплексные </br>продукты и </br>оборудование'}
+                    ]
+            for card, index in cards
+                a(href="#") 
+                    +e('card').d-flex
+                        img(src= card.img, alt="img").set-w-105.set-h-100
+                        p.fz-24.lh-32!= card.text

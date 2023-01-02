@@ -1,0 +1,15 @@
+include ../menu/menu-crm
+include ../icon/icon
+
+mixin header-email(data)
+  +b('header-email-backend')&attributes(attributes)
+    img(src="/src/static/images/header-crm-circle-big.png", alt="circle").back.position-absolute
+    +menu-crm
+    +b('header-email', {}, 'header').position-relative.set-pt-92
+      img(src="/src/static/images/header-email-bk.png", alt="backend").position-absolute.set-w-547.set-h-525
+      img(src="/src/static/images/header-crm-circle.png", alt="circle").position-absolute.set-w-417.set-h-417
+      .container.position-relative
+        +e('tagline', {}, 'h4').fz-20.lh-27 Повышаем эффективность ваших коммуникаций с клиентами
+        +e('header', {}, 'h1').fz-64.lh-72.set-mt-31 Email-маркетинг </br>под ключ
+        p.set-mt-58.fz-18.lh-24 Создаем полезные рассылки обеспечивая максимальный </br>результат от вложенных денег в рекламу
+        +e('button', {}, 'a')(href="#").brand-button.link-red.set-w-200.set-mt-60 Оставить заявку

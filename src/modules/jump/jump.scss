@@ -14,8 +14,9 @@
     &__card {
         border-radius: 30px;
         padding: 35px 0 0 30px;
+        transition: 0.5s;
 
-        &:nth-child(1) {
+        &_1 {
             width: 100%;
             height: 100%;
             background-image: url(/src/static/images/jump-email.jpg);
@@ -24,7 +25,7 @@
             background-position: center;
         }
 
-        &:nth-child(2) {
+        &_2 {
             width: 100%;
             height: 100%;
             background-image: url(/src/static/images/jump-telemarketing.jpg);
@@ -33,13 +34,17 @@
             background-position: center;
         }
 
-        &:nth-child(3) {
+        &_3 {
             width: 100%;
             height: 100%;
             background-image: url(/src/static/images/jump-marcketing.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+        }
+
+        &:hover {
+            box-shadow: 4px 4px 10px 23px rgba(228, 229, 231, 0.2);
         }
     }
 }

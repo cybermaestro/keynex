@@ -1,0 +1,87 @@
+.price-email {
+    $self: &;
+    background: $ExtraBrightGray;
+    opacity: 0.99;
+    text-align: center;
+
+    &__header {
+        color: $SuperDarkGray;
+        font-weight: 700;
+    }
+
+    & h5 {
+        color: $DarkGray;
+    }
+
+    &__box {
+        justify-content: space-between;
+    }
+
+    &__sheet {
+        align-items: stretch;
+        background: $White;
+        border-radius: 30px;
+        padding: 40px;
+        transition: 0.6s;
+
+        &:hover {
+            color: $White;
+            background: $DarkRed;
+            .click {
+                color: $White;
+            }
+        }
+    }
+
+    & h2 {
+        font-weight: 500;
+        color: $DarkRed;
+    }
+
+    & p {
+        color: $DarkGray;
+    }
+
+    & hr {
+        border-top: 2px solid $Gray; 
+    }
+
+    &__priсe {
+        font-weight: 600;
+        color: $SuperDarkGray;
+        & span {
+            font-size: 16px;
+            line-height: 20px;
+            color: $Gray;
+        }
+    }
+
+    & ul {
+        list-style-type: disc;
+        color: $DarkGray;
+        text-align: left;
+    }
+
+    
+}
+
+.rate {
+    justify-content: space-between;
+    align-items: center;
+    background: $White;
+    border-radius: 30px;
+    padding: 50px 40px;
+    
+    &__box {
+        text-align: left;
+    }
+
+    & h3 {
+        font-weight: 500;
+        color: $DarkRed;
+    }
+    
+    & h4 {
+        color: $DarkGray;
+    }
+}
