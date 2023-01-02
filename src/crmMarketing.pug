@@ -2,11 +2,12 @@ extends ./layouts/default
 include ./modules/head/head
 include ./modules/cases/cases
 
+
 block head
   +head({ title: 'CRM-маркетинг' })
 
 block header
-  +header({})
+    +header-crm
 
 block content
     +cases

@@ -1,0 +1,18 @@
+include ../menu/menu-crm
+include ../icon/icon
+
+mixin header-crm(data)
+  +menu
+  +b('header', {}, 'header').position-relative
+    +e('circle', {}, 'img')(src="/src/static/images/circle_header.jpg", alt="circle").position-absolute
+    img(src="/src/static/images/key_red-big.svg", alt="kuy").position-absolute.set-w-34.set-h-34
+    img(src="/src/static/images/key_grey-big.svg", alt="kuy").position-absolute.set-w-48.set-h-50
+    img(src="/src/static/images/key_red-small.svg", alt="kuy").position-absolute.set-w-25.set-h-27
+    img(src="/src/static/images/key_grey-small.svg", alt="kuy").position-absolute.set-w-33.set-h-35
+    img(src="/src/static/images/header_maska.png", alt="maska").cal.position-absolute.set-w-139.set-h-246
+    .container.position-relative
+      +e('target',{}, 'img')(src= "/src/static/images/target.svg", alt="target").position-absolute.set-w-525.set-h-578
+      +e('tagline', {}, 'h4').set-mt-92.fz-20.lh-27 Строим систему долгосрочных отношений с вашими клиентами
+      +e('header', {}, 'h1').fz-64.lh-72.set-mt-31 CRM-маркетинг
+      p.set-mt-58.fz-18.lh-24 Собираем данные и создаем уникальные предложения </br>для увеличения продаж
+      +e('button', {}, 'a')(href="#").brand-button.link-red.set-w-200.set-mt-60.set-mb-280 Оставить заявку

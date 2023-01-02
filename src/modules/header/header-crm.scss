@@ -1,0 +1,68 @@
+.header-crm {
+    $self: &;
+    background: linear-gradient(62.98deg, #DFDFDF -25.47%, #FFFFFF 81.18%);
+  
+    &__circle {
+      z-index: -2;
+      right: 0;
+      top: 215px;
+    }
+  
+    &__target {
+      z-index: -1;
+      right: 0;
+      margin-top: 40px;
+    }
+  
+    & img:nth-child(2) {
+      top: 13px;
+      left: 842px;
+      z-index: -1;
+    }
+  
+    & img:nth-child(3) {
+      top: 245px;
+      left: 462px;
+      z-index: -1;
+    }
+  
+    & img:nth-child(4) {
+      top: 552px;
+      left: 279px;
+      z-index: -1;
+    }
+  
+    & img:nth-child(5) {
+      top: 756px;
+      left: 57px;
+      z-index: -1;
+      transition: 0.8s;
+    }
+    
+    & img:nth-child(6) {
+      top: 319px;
+      right: 109px;
+      z-index: 1;
+    }
+  
+    &__header {
+      color: $SuperDarkGray;
+    }
+  
+    & p {
+      color: $DarkGray;
+    }
+  
+    &__tagline {
+      color: $DarkRed;
+      text-transform: uppercase;
+    }
+  }
+  
+  .cal {
+    opacity: 0;
+    transition: 1s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }

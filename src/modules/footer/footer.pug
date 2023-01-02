@@ -6,9 +6,10 @@ mixin footer(data = {})
       +e('box').d-flex.justify-content-between
         +e('Services').fz-18.lh-44
           h3 Услуги
-          each val in ["Email-маркетинг", "CRM-маркетинг", "Телемаркетинг", "Контент-маркетинг"]
-            p
-              a(href="#")= val
+          - services = [{name: "Email-маркетинг", href: "#"}, {name: "CRM-маркетинг", href: "/crmMarketing.html"}, {name: "Телемаркетинг", href: "#"}, {name: "Контент-маркетинг", href: "#"}]
+            for i in services
+              p
+                a(href= i.href)= i.name
         +e('Agency').fz-18.lh-44
           h3 Агентство
           each val in ["O нас", "Карьера", "Блог"]
@@ -46,5 +47,5 @@ mixin footer(data = {})
               +e('button', {}, 'a')(href="#").brand-button.red.link.set-w-167 Подписаться
       hr
       +e('bottom').d-flex.justify-content-between.set-pt-24.set-pb-26.fz-16.lh-24
-        a(href="#") Keynex
+        a(href="/main.html") Keynex
         a(href="#") Политика конфиденциальности
