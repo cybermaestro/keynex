@@ -1,0 +1,25 @@
+mixin business-tasks_email
+  +b('business-tasks_email').position-relative.set-pt-130.set-pb-50
+    img(src="/src/static/images/tasks_circle-big.png", alt="circle").position-absolute.tasks-bk
+    img(src="/src/static/images/tasks_circle-gray.png", alt="circle").position-absolute.set-w-127.set-h-127.tasks-bk
+    img(src="/src/static/images/tasks_circle-red.png", alt="circle").position-absolute.set-w-50.set-h-50.tasks-bk
+    img(src="/src/static/images/tasks_line.png", alt="line").position-absolute.tasks-bk
+    .container
+        +e('header').fz-56.lh-72.set-mb-80 Решаем отдельные </br>бизнес задачи
+        +e('tasks')
+          -
+            cards = [
+              {img: '/src/static/images/number-1.png', header: 'Базовый аудит </br>текущего </br>состояния </br>рассылок'},
+              {img: '/src/static/images/number-2.png', header: 'Разработка 3-х </br>писем для </br>Welcomm </br>цепочки'},
+              {img: '/src/static/images/number-3.png', header: 'Разработка </br>стратегии'},
+              {img: '/src/static/images/number-4.png', header: 'Сбор и </br>Сегментация КБ'},
+              {img: '/src/static/images/number-5.png', header: 'Создание мастер </br>шаблона'},
+              ]
+          for card, index in cards
+              +e('card').d-flex.set-w-416.set-h-295
+                  img(src= card.img, alt="number").set-w-105.set-h-99.set-mr-25
+                  +e('info').position-relative
+                      h3.fz-24.lh-32!= card.header
+                      +e('button', {}, 'a')(href="#").d-flex.link.position-absolute
+                          hr.set-w-40.set-mr-20
+                          p.fz-16.lh-24.set-pt-13 Заказать

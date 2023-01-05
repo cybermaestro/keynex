@@ -43,6 +43,15 @@
             background-position: center;
         }
 
+        &_4 {
+            width: 100%;
+            height: 100%;
+            background-image: url(/src/static/images/jump-crm.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
         &:hover {
             box-shadow: 4px 4px 10px 23px rgba(228, 229, 231, 0.2);
         }

@@ -7,6 +7,9 @@ include ./modules/compatibility/compatibility-email
 include ./modules/advertising/advertising
 include ./modules/usage/usage-email
 include ./modules/price/price-email
+include ./modules/business-tasks/business-tasks_email
+include ./modules/questions/questions-email
+include ./modules/jump/jump-email
 
 block head
   +head({ title: 'Email-маркетинг' })
@@ -21,4 +24,7 @@ block content
     +advertising
     +usage-email
     +price-email
+    +business-tasks_email
+    +questions-email
+    +jump-email
     +consultation
