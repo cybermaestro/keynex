@@ -1,0 +1,10 @@
+mixin advertising-con
+  +b('advertising').position-relative
+    img(src="/src/static/images/advertising_circle-big.png", alt="circle").position-absolute
+    img(src="/src/static/images/advertising_circle-small-white.png", alt="circle").position-absolute
+    img(src="/src/static/images/advertising_circle-small-grey.png", alt="circle").position-absolute
+    img(src="/src/static/images/advertising_circle-red.png", alt="circle").position-absolute
+    .container
+        +e('box').d-flex
+            +e('header').fz-34.lh-46 Экспертный контент маркетинг помогает выделиться и в </br>2 раза увеличивает трафик
+            a(href="#").brand-button.link-red.set-w-286 ПОПРОБОВАТЬ

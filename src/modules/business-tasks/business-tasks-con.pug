@@ -1,0 +1,27 @@
+mixin business-tasks-con
+  +b('business-tasks_email').position-relative.set-pt-130.set-pb-50
+    img(src="/src/static/images/tasks_circle-big.png", alt="circle").position-absolute.tasks-bk
+    img(src="/src/static/images/tasks_circle-gray.png", alt="circle").position-absolute.set-w-127.set-h-127.tasks-bk
+    img(src="/src/static/images/tasks_circle-red.png", alt="circle").position-absolute.set-w-50.set-h-50.tasks-bk
+    img(src="/src/static/images/tasks_line.png", alt="line").position-absolute.tasks-bk
+    .container
+        +e('header').fz-56.lh-72.set-mb-80 Решаем отдельные </br>бизнес задачи
+        +e('tasks')
+          -
+            cards = [
+              {img: '/src/static/images/number-1.png', header: 'Статья на сайт </br>компании', price: 'от <span> 3000</span> руб'},
+              {img: '/src/static/images/number-2.png', header: 'Статья для </br>внешней площадки', price: 'от <span> 4000</span> руб'},
+              {img: '/src/static/images/number-3.png', header: 'Пост для соцсетей </br>или в Telegram', price: 'от <span> 1000</span> руб'},
+              {img: '/src/static/images/number-4.png', header: 'Описания товаров в </br>интернет-магазине', price: 'от <span> 1000</span> руб'},
+              {img: '/src/static/images/number-5.png', header: 'Письмо для email-</br>рассылки', price: 'от <span> 1000</span> руб'},
+              {img: '/src/static/images/number-6.png', header: 'Текст для </br>лендинга', price: 'от <span> 7000</span> руб'},
+              ]
+          for card, index in cards
+              +e('card').d-flex.set-w-416.set-h-295
+                  img(src= card.img, alt="number").set-w-105.set-h-99.set-mr-25
+                  +e('info').position-relative
+                      h3.fz-24.lh-32!= card.header
+                      +e('price').position-absolute.fz-16.lh-20!= card.price
+                      +e('button', {}, 'a')(href="#").d-flex.link.position-absolute
+                          hr.set-w-40.set-mr-20
+                          p.fz-16.lh-24.set-pt-13 Заказать

@@ -1,0 +1,24 @@
+mixin usage-con
+  +b('usage-crm').set-pb-144.set-pt-119.position-relative
+    img(src="/src/static/images/usage-circle-grey.png", alt="circle").position-absolute
+    img(src="/src/static/images/usage-circle-big.png", alt="circle").position-absolute
+    .container
+        +e('header').set-mb-100.fz-56.lh-72.text-center Мы точно знаем, как создавать </br>эффективные рассылки
+        +e('box').d-flex
+            - 
+                cards = [
+                    {img: '/src/static/images/usage-con-card-1.png', number: 'Шаг 1', header: 'Проводим предварительную </br>подготовку', ul: ["Погружаемся в специфику вашего бизнеса", "Анализируем целевую аудиторию", "Исследуем ваших конкурентов"]},
+                    {img: '/src/static/images/usage-con-card-2.png', number: 'Шаг 2', header: 'Разрабатываем контент-</br>стратегию', ul: ["Ставим основные цели и задачи", "Определяем форматы материалов и каналы </br>распространения", "Продумываем, как встроить контент в вашу </br>воронку продаж", "Фиксируем показатели, по которым будем</br>отслеживать эффективность"]},
+                    {img: '/src/static/images/usage-con-card-3.png', number: 'Шаг 3', header: 'Создаем и продвигаем </br>контент', ul: ["Составляем контент-план на месяц", "Пишем тексты для email-рассылок и для ваших </br>соцсетей (по запросу)", "Пишем статьи, создаем фото и иллюстрации для них", "Размещаем материалы на выбранных площадках"]},
+                    {img: '/src/static/images/usage-con-card-4.png', number: 'Шаг 4', header: 'Анализируем эффективность', ul: ["Оцениваем выполненную работу", "Создаем отчет и передаем вам", "Корректируем контент-стратегию при необходимости"]}
+                ]
+            for card, index in cards
+                +e('card').d-flex.set-mb-126
+                    img(src= card.img, alt="img").set-w-416.set-h-416.set-mr-55
+                    +e('info').set-pt-55
+                        h3.fz-20.lh-27= card.number 
+                        h2.set-mt-19.fz-32.lh-40!= card.header
+                        ul.set-mt-50.fz-18.lh-31
+                            - item= card.ul
+                            for x in item
+                                li!= x

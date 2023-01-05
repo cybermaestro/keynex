@@ -14,7 +14,7 @@
     }
 
     &__card {
-        padding: 50px 30px 30px 30px;
+        padding: 50px 23px 30px 23px;
         border-radius: 30px;
         background: linear-gradient(180deg, #F5F7F9 0%, #FFFFFF 28.64%);
         &:hover {
@@ -26,6 +26,29 @@
             .business-tasks_email__button p {
                 color: $DarkRed;
             }
+
+            .business-tasks_email__price span {
+                color: $DarkRed;
+            }
+        }
+    }
+
+    &__info {
+        flex-grow: 1;
+        & span {
+            color: $Gray;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+
+    &__price {
+        bottom: 80px;
+        color: $Gray;
+        & span {
+            color: $SuperDarkGray;
+            font-size: 40px;
+            line-height: 55px;
         }
     }
 

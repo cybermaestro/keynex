@@ -1,0 +1,21 @@
+mixin trust-con
+  +b('trust-email').position-relative.set-pb-200.set-pt-160
+    img(src="/src/static/images/trust-email_circle.png", alt="circle").position-absolute.set-w-144.set-h-144
+    img(src="/src/static/images/key_red-small.svg", alt="kuy").position-absolute.set-w-25.set-h-27
+    img(src="/src/static/images/trust_kuy.svg", alt="kuy").position-absolute.set-w-33.set-h-35
+    img(src="/src/static/images/key_grey-small.svg", alt="kuy").position-absolute.set-w-33.set-h-35
+    img(src="/src/static/images/trust-email-circle-big.png", alt="circle").position-absolute
+    .container
+        +e('header', {}, 'h3').fz-56.lh-72 Какие задачи решает </br>контент-маркетинг
+        +e('cards').d-flex.justify-content-between.set-pt-68
+            -
+                cards = [
+                    {number: '1', header: 'Усиление продаж', text: 'Убедительный текст — это эффективный способ </br>рассказать о преимуществах товара и отработать </br>возражения'},
+                    {number: '2', header: 'Создание образа эксперта', text: 'Вы публикуете статьи, основанные на личном </br>опыте, и в глазах клиентов становитесь </br>профессионалом в своей области'},
+                    {number: '3', header: 'Повышение лояльности', text: 'Полезный контент выделит вашу компанию среди </br>конкурентов и вызовет доверие со стороны </br>пользователей'},
+                ]
+            for card, index in cards
+                +e('card')
+                    +e('circle').set-pt-10.text-center.fz-48.lh-66= card.number
+                    h4.set-mt-40.fz-24.lh-32!= card.header
+                    p.set-mt-20.fz-16.lh-24!= card.text

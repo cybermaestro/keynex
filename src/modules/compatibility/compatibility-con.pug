@@ -1,0 +1,20 @@
+mixin compatibility-con
+  +b('compatibility-email').set-pb-186.set-pt-118
+    .container
+        +e('header').fz-56.lh-72 Кому подойдет контент-маркетинг
+        p.set-mt-24.set-mb-80.fz-18.lh-24 По исследованию Rock Content, 70% людей предпочитают узнавать о компании из </br>информационных статей, а не из рекламы. 
+        +e('box').d-flex.justify-content-space-between
+            -
+                cards = [
+                    {img: '/src/static/images/card-email-2.png', text: 'Консалтинговые, </br>юридические и </br>финансовые фирмы'},
+                    {img: '/src/static/images/card-email-5.png', text: 'Инфобизнес и </br>онлайн-образование'},
+                    {img: '/src/static/images/card-email-2.png', text: 'Компании с </br>дорогими услугами </br>или товарами'},
+                    {img: '/src/static/images/card-email-6.png', text: 'Компании со </br>сложным продуктом'},
+                    {img: '/src/static/images/card-email-2.png', text: 'Предприятия с </br>собственным </br>производством'},
+                    {img: '/src/static/images/card-email-2.png', text: 'Стартапы и </br>бизнесы с новым </br>продуктом'}
+                    ]
+            for card, index in cards
+                a(href="#") 
+                    +e('card').d-flex
+                        img(src= card.img, alt="img").set-w-105.set-h-100.set-mr-20
+                        p.fz-24.lh-32!= card.text

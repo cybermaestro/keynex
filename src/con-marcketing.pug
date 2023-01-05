@@ -1,12 +1,30 @@
 extends ./layouts/default
 include ./modules/head/head
 include ./modules/consultation/consultation
+include ./modules/cases/cases-con
+include ./modules/trust/trust-con
+include ./modules/compatibility/compatibility-con
+include ./modules/advertising/advertising-con
+include ./modules/usage/usage-con
+include ./modules/price/price-con
+include ./modules/business-tasks/business-tasks-con
+include ./modules/questions/questions-con
+include ./modules/jump/jump-con
 
 block head
   +head({ title: 'Контент-маркетинг' })
 
 block header
-    +header-crm
+  +header-con
 
 block content
-    +consultation
+  +cases-con
+  +trust-con
+  +compatibility-con
+  +advertising-con
+  +usage-con
+  +price-con
+  +business-tasks-con
+  +questions-con
+  +jump-con
+  +consultation

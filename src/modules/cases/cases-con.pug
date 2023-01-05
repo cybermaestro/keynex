@@ -1,0 +1,20 @@
+mixin cases-con
+  +b('cases-crm').position-relative.text-center.set-pb-186.set-pt-38
+    img(src="/src/static/images/case_circle-red.png", alt="circle").position-absolute.set-w-705.set-h-705
+    img(src="/src/static/images/case_circle-grey.png", alt="circle").position-absolute.set-w-48.set-h-48
+    .container
+        +e('header', {}, 'header').fz-56.lh-72 О контент-маркетинге </br>в цифрах
+        p.set-mt-38.fz-18.lh-24 Доказана на личном опыте и бизнесе.
+        +b('buttons-crm')&attributes(attributes).d-flex.set-mt-87
+            +e('case', {}, 'a')(href="#").d-flex.flex-column.align-items-center.set-w-306.set-h-344
+                +e('emblem', {}, 'img')(src="/src/static/images/case-crm-schedule.svg", alt="emblem").d-block.set-w-32.set-h-32.set-mt-96
+                +e('indicators').set-mt-26 52%
+                p.set-mt-10 Поднимает трафик </br>сайта
+            +e('case', {}, 'a')(href="#").d-flex.flex-column.align-items-center.set-w-306.set-h-344.text-center
+                +e('emblem', {}, 'img')(src="/src/static/images/case-crm-cross.svg", alt="emblem").d-block.set-w-32.set-h-32.set-mt-96
+                +e('indicators').set-mt-26 60%
+                p.set-mt-10 Наращивает количество </br>лидов
+            +e('case', {}, 'a')(href="#").d-flex.flex-column.align-items-center.set-w-306.set-h-344.text-center
+                +e('emblem', {}, 'img')(src="/src/static/images/case-crm-up.svg", alt="emblem").d-block.set-w-32.set-h-32.set-mt-96
+                +e('indicators').set-mt-26 80%
+                p.set-mt-10 Увеличивает </br>узнаваемость бренда

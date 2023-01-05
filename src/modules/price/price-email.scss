@@ -60,6 +60,9 @@
         list-style-type: disc;
         color: $DarkGray;
         text-align: left;
+        & span {
+            margin-left: 16px;
+        }
     }
 
     

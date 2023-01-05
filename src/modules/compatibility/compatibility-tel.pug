@@ -1,0 +1,21 @@
+mixin compatibility-tel
+  +b('compatibility-email').set-pb-186.set-pt-118
+    .container
+        +e('header').fz-56.lh-72 Кому подойдет телемаркетинг?
+        p.set-mt-24.set-mb-80.fz-18.lh-24 По исследованию Rain Group, 49% покупателей предпочитают холодные звонки в качестве </br>первого контакта с незнакомой компанией.
+
+        +e('box').d-flex.justify-content-space-between
+            -
+                cards = [
+                    {img: '/src/static/images/card-crm-6.png', text: 'Банки и страховые </br>компании'},
+                    {img: '/src/static/images/card-crm-4.png', text: 'Интернет-магазины'},
+                    {img: '/src/static/images/card-crm-1.png', text: 'Медицинские </br>клиники, салоны </br>красоты и фитнес-</br>центры'},
+                    {img: '/src/static/images/card-crm-4.png', text: 'Операторы сотовой </br>связи и интернет-</br>провайдеры'},
+                    {img: '/src/static/images/card-crm-1.png', text: 'B2B-компании'},
+                    {img: '/src/static/images/card-email-6.png', text: 'B2C-компании с </br>товарами или </br>услугами </br>массового спроса'}
+                    ]
+            for card, index in cards
+                a(href="#") 
+                    +e('card').d-flex
+                        img(src= card.img, alt="img").set-w-105.set-h-100.set-mr-20
+                        p.fz-24.lh-32!= card.text

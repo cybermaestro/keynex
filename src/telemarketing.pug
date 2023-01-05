@@ -1,12 +1,30 @@
 extends ./layouts/default
 include ./modules/head/head
 include ./modules/consultation/consultation
+include ./modules/cases/cases-tel
+include ./modules/trust/trust-tel
+include ./modules/compatibility/compatibility-tel
+include ./modules/advertising/advertising-tel
+include ./modules/usage/usage-tel
+include ./modules/price/price-tel
+include ./modules/business-tasks/business-tasks-tel
+include ./modules/questions/questions-tel
+include ./modules/jump/jump-tel
 
 block head
   +head({ title: 'Телемаркетинг' })
 
 block header
-    +header-crm
+  +header-tel
 
 block content
-    +consultation
+  +cases-tel
+  +trust-tel
+  +compatibility-tel
+  +advertising-tel
+  +usage-tel
+  +price-tel
+  +business-tasks-tel
+  +questions-tel
+  +jump-tel
+  +consultation

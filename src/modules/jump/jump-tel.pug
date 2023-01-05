@@ -1,0 +1,14 @@
+mixin jump-tel
+  +b('jump-crm').set-pb-128.set-pt-80
+    .container
+        +e('header').fz-32.lh-44.text-center.set-mb-62 Используйте дополнительные возможности для достижения </br>максимального результата по увеличению продаж.
+        +e('cards').d-flex
+            a(href="/email.html").link
+                +e('card', {m: '1'}).set-w-416.set-h-295
+                    h3.fz-24.lh-33 Email-маркетинг
+            a(href="/crmMarketing.html").link
+                +e('card', {m: '4'}).set-w-416.set-h-295
+                    h3.fz-24.lh-33 CRM-маркетинг
+            a(href="/con-marcketing.html").link
+                +e('card', {m: '3'}).set-w-416.set-h-295
+                    h3.fz-24.lh-33 Контент-маркетинг

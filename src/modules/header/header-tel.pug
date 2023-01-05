@@ -1,0 +1,15 @@
+include ../menu/menu-crm
+include ../icon/icon
+
+mixin header-tel(data)
+  +b('header-email-backend')&attributes(attributes)
+    img(src="/src/static/images/header-crm-circle-big.png", alt="circle").back.position-absolute
+    +menu-crm
+    +b('header-email', {}, 'header').position-relative.set-pt-92
+      img(src="/src/static/images/header-tel-bk.png", alt="backend").position-absolute.set-w-547.set-h-525
+      img(src="/src/static/images/header-crm-circle.png", alt="circle").position-absolute.set-w-417.set-h-417
+      .container.position-relative
+        +e('tagline', {}, 'h4').fz-20.lh-27 Повышаем эффективность ваших коммуникаций с клиентами
+        +e('header', {}, 'h1').fz-64.lh-72.set-mt-31 Телемаркетинг
+        p.set-mt-58.fz-18.lh-24 Убедительно и ненавязчиво доносим преимущества </br>вашего предложения до целевой аудитории
+        +e('button', {}, 'a')(href="#").brand-button.link-red.set-w-200.set-mt-60 Оставить заявку

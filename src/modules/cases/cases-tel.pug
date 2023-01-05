@@ -1,0 +1,20 @@
+mixin cases-tel
+  +b('cases-crm').position-relative.text-center.set-pb-186.set-pt-38
+    img(src="/src/static/images/case_circle-red.png", alt="circle").position-absolute.set-w-705.set-h-705
+    img(src="/src/static/images/case_circle-grey.png", alt="circle").position-absolute.set-w-48.set-h-48
+    .container
+        +e('header', {}, 'header').fz-56.lh-72 Эффективность телемаркетинга подтверждают </br>исследования и наш многолетний опыт
+        p.set-mt-38.fz-18.lh-24 Доказана на личном опыте и бизнесе.
+        +b('buttons-crm')&attributes(attributes).d-flex.set-mt-87
+            +e('case', {}, 'a')(href="#").d-flex.flex-column.align-items-center.set-w-306.set-h-344
+                +e('emblem', {}, 'img')(src="/src/static/images/case-tel-telephone.svg", alt="emblem").d-block.set-w-32.set-h-32.set-mt-96
+                +e('indicators').set-mt-26 69%
+                p.set-mt-10 Отвечают на звонки с </br>незнакомых номеров
+            +e('case', {}, 'a')(href="#").d-flex.flex-column.align-items-center.set-w-306.set-h-344.text-center
+                +e('emblem', {}, 'img')(src="/src/static/images/case-email-repeat.svg", alt="emblem").d-block.set-w-32.set-h-32.set-mt-96
+                +e('indicators').set-mt-26 93%
+                p.set-mt-10 Покупают товар после </br>повторных звонков
+            +e('case', {}, 'a')(href="#").d-flex.flex-column.align-items-center.set-w-306.set-h-344.text-center
+                +e('emblem', {}, 'img')(src="/src/static/images/case-email-jackdaw.svg", alt="emblem").d-block.set-w-32.set-h-32.set-mt-96
+                +e('indicators').set-mt-26 40%
+                p.set-mt-10 Российских компаний </br>успешно используют </br>телемаркетинг
