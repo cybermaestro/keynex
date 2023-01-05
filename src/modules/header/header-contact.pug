@@ -1,0 +1,39 @@
+include ../menu/menu-crm
+include ../icon/icon
+
+mixin header-contact(data)
+  +b('header-crm-backend')&attributes(attributes)
+    img(src="/src/static/images/header-crm-circle-big.png", alt="circle").back.position-absolute
+    +menu-crm
+    +b('header-crm', {}, 'header').position-relative.set-pt-92.set-pb-110
+      img(src="/src/static/images/header-crm-circle.png", alt="circle").position-absolute.set-w-417.set-h-417.img-cont
+      .container
+        +b('contact-box').d-flex
+          +e('box-left')
+            +e('header', {}, 'h1').fz-64.lh-72.set-mt-31 Контакты
+              p.fz-18.lh-24 Адрес:
+              h5.set-mb-30 г. Красноярск, ул. Караульная 3, офис 301
+              p.fz-16.lh-24 Телефон:
+              h5 8 (903) 920-00-19
+              +e('row').set-mb-35
+                a(href='#')
+                  +icon('telegram-cont').icon-con-size
+                a(href='#')
+                  +icon('vibe-cont').icon-con-size
+                a(href='#')
+                  +icon('whatsapp-cont').icon-con-size
+              p.fz-16.lh-24 Электронная почта:
+              h5.set-mb-35 info@keynex.ru
+              p.fz-12.lh-10 Мы в социальных сетях
+              +e('row').set-mb-30
+                a(href='#')
+                  +icon('instagram-cont').icon-con-size
+                a(href='#')
+                  +icon('vk-cont').icon-con-size
+                a(href='#')
+                  +icon('telegram-cont').icon-con-size
+              p.fz-16.lh-24 График работы:
+              h5 Понедельник-Пятница с 10:00 до 19:00
+          +e('map')#map
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>

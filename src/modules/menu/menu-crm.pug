@@ -22,16 +22,16 @@ mixin menu-crm
                                 for i, index in services
                                     +e('block', {}, 'a')(href= i.href).d-block.link.fz-14.lh-30= i.name
                     +e('link-jackdaw', {}, 'label')(for="jackdaw")
-                    +e('link', {}, 'a')(href="#").link Кейсы
+                    +e('link', {}, 'a')(href="/career.html").link Кейсы
                     +e('agency').position-relative
                         +e('link', {}, 'a')(href="#").link.set-pr-22  Агентство
                         +e('active').position-absolute
-                            - services = [{name: "О нас", href: "#"}, {name: "Карьера", href: "#"}, {name: "Блог", href: "#"}]
+                            - services = [{name: "О нас", href: "/contact.html"}, {name: "Карьера", href: "/career.html"}, {name: "Блог", href: "/blog.html"}]
                                     for i, index in services
                                         +e('block', {}, 'a')(href= i.href).d-block.link.fz-14.lh-30= i.name
                         +e('link-jackdaw', {}, 'label')(for="jackdaw")
-                    +e('link', {}, 'a')(href="#").link Блог
-                    +e('link', {}, 'a')(href="#").link Контакты
+                    +e('link', {}, 'a')(href="/blog.html").link Блог
+                    +e('link', {}, 'a')(href="/contact.html").link Контакты
             +b('call')
                 +e('number').position-relative.fz-18.set-pl-65 8 (903) 920-00-19
                     +e('link-telephone', {}, 'label')(for="telephone").position-absolute.set-w-21.set-h-21

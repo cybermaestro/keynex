@@ -13,7 +13,7 @@
 
 .header-crm {
     $self: &;
-    height: 722px;
+    min-height: 722px;
     opacity: 0.99;
     
     & img:nth-child(1) {
@@ -53,4 +53,45 @@
     }
 
 
+  }
+
+  .blog-cards {
+    justify-content: space-between;
+    
+    &__card {
+      background: $White;
+      width: 398px;
+      height: 500px;
+      border-radius: 20px;
+    }
+
+    &__bk-cont {
+      background: linear-gradient(178.5deg, #E2E2E2 1.28%, rgba(255, 255, 255, 0) 157.74%);
+      border-radius: 20px 20px 0 0;
+    }
+
+    &__card-bottom {
+      padding-left: 34px;
+    }
+
+    & img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    & img:nth-child(1) {
+      width: 244px;
+      height: 216px;
+    }
+
+    & img:nth-child(2) {
+      width: 280px;
+      height: 211px;
+    }
+
+    & img:nth-child(3) {
+      width: 290px;
+      height: 236px;
+    }
   }

@@ -2,4 +2,9 @@
 import './phone_button.svg';
 import './vk.svg';
 import './telegram.svg';
-import './instagram.svg';
+import './telegram-cont.svg';
+import './vibe-cont.svg';
+import './whatsapp-cont.svg';
+import './instagram-cont.svg';
+import './vk-cont.svg';
+import './telegram-cont.svg';

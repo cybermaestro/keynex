@@ -1,0 +1,14 @@
+extends ./layouts/default
+include ./modules/head/head
+include ./modules/consultation/consultation
+
+
+
+block head
+  +head({ title: 'Блог' })
+
+block header
+    +header-blog
+
+block content
+    +consultation

@@ -1,0 +1,24 @@
+include ../menu/menu-crm
+include ../icon/icon
+
+mixin header-blog(data)
+  +b('header-crm-backend')&attributes(attributes)
+    img(src="/src/static/images/header-crm-circle-big.png", alt="circle").back.position-absolute
+    +menu-crm
+    +b('header-crm', {}, 'header').position-relative.set-pt-92
+      .container.position-relative
+        +b('blog-cards')&attributes(attributes).d-flex
+            - 
+                cards =[
+                {img: '/src/static/images/card-blog-1.png', header: 'Welcome-цепочки, что это </br>и для чего нужны', text: 'Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных. </br>Бизнес-план ускоряет портрет потребителя.', data: '06.07.2022'},
+                {img: '/src/static/images/card-blog-2.png', header: 'Где взять базу подписчиков </br>для рассылки', text: 'Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных. </br>Бизнес-план ускоряет портрет потребителя.', data: '06.07.2022'},
+                {img: '/src/static/images/card-blog-3.png', header: 'Заблуждения в email маркетинге, </br>которые кажутся истиной', text: 'Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных. </br>Бизнес-план ускоряет портрет потребителя.', data: '06.07.2022'},]
+            for card, index in cards
+                +e('card')
+                    +e('bk-cont').set-pt-40
+                        img(src= card.img, alt="img").set-pb-42
+                    +e('card-bottom')
+                        h3.fz-20.lh-24.set-mb-17.set-mt-20!= card.header
+                        p.fz-14.lh-20.set-mb-34!= card.text
+                        p.fz-14.lh-20!= card.data
+

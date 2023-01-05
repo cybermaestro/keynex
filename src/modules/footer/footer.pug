@@ -12,9 +12,10 @@ mixin footer(data = {})
                 a(href= i.href)= i.name
         +e('Agency').fz-18.lh-44
           h3 Агентство
-          each val in ["O нас", "Карьера", "Блог"]
+            - info = [{name: "O нас", href: "/contact.html"}, {name: "Карьера", href: "/career.html"}, {name: "Блог", href: "/blog.html"}]
+          for i, index in info
             p
-              a(href="#")= val
+              a(href= i.href)= i.name
         +e('Contacts').set-w-260.fz-18.lh-28
           h3 Контакты
           +e('telephone').d-flex.align-items-center.set-mb-12
