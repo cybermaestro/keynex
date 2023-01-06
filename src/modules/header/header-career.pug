@@ -1,0 +1,37 @@
+include ../menu/menu-crm
+include ../icon/icon
+
+mixin header-career(data)
+        +b('header-crm-backend')&attributes(attributes).position-relative
+            img(src="/src/static/images/header-crm-circle-big.png", alt="circle").back.position-absolute
+            +menu-crm
+            +b('header-crm', {}, 'header').set-pt-92.set-pb-147
+                .container
+                    +b('cases-row')&attributes(attributes)
+                        -
+                            items =[{img: '/src/static/images/case_bk.png', header: 'Заголовок', href: '#'}, 
+                            {img: '/src/static/images/case_bk.png', header: 'Заголовок', href: '#'},
+                            {img: '/src/static/images/case_bk.png', header: 'Заголовок', href: '#'},
+                            {img: '/src/static/images/case_bk.png', header: 'Заголовок', href: '#'},
+                            {img: '/src/static/images/case_bk.png', header: 'Заголовок', href: '#'},
+                            {img: '/src/static/images/case_bk.png', header: 'Заголовок', href: '#'}
+                            ]
+                        for item in items
+                            a(href!= item.href).open-case 
+                                +e('casus').position-relative
+                                    img(src= item.img, alt="bk").position-absolute.case-img-bk
+                                    h6.fz-24.lh-32.position-absolute!= item.header
+-
+    windows =[
+        {header: 'Карточка №1'},
+        {header: 'Карточка №2'},
+        {header: 'Карточка №3'},
+        {header: 'Карточка №4'},
+        {header: 'Карточка №5'},
+        {header: 'Карточка №6'}]
+for window in windows
+    +b('window')&attributes(attributes).position-absolute.hide
+            +e('content').position-relative.set-pt-85.set-pl-95
+                a(href="#").d-block.position-absolute.cross-case
+                    img(src="/src/static/images/cross.svg", alt="cross").cross
+                h6.fz-56.lh-72= window.header
