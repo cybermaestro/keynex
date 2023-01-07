@@ -27,17 +27,17 @@ mixin header-blog(data)
           +e('wrapper').d-flex
             +e('video')
               +e('video-item', {}, 'video')(preload="metadata", src="/src/static/videos/venera.mp4", controls, poster="/src/static/images/video-poster-1.jpg")
-              +e('name').fz-32.lh-65 Чем хорош телемаркетинг
-              p.fz-14.lh-20 Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных. 
+              +e('name').fz-32.set-mt-15.set-mb-15 Чем хорош телемаркетинг
+              p.video_text.fz-14.lh-20 Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных. 
             +e('list')
               - 
                 items =[
-                  {href: '#', src: 'src/static/videos/new-yorck.mp4', img: '/src/static/images/video-poster-2.jpg', header: 'Где взять базу подписчиков </br>для рассылки', text: 'Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных.'},
-                  {href: '#', src: 'src/static/videos/venera.mp4', img: '/src/static/images/video-poster-3.jpg', header: 'Где взять базу подписчиков </br>для рассылки', text: 'Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных.'},
-                  {href: '#', src: 'src/static/videos/new-yorck.mp4', img: '/src/static/images/video-poster-4.jpg', header: 'Где взять базу подписчиков </br>для рассылки', text: 'Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных.'},
-                  {href: '#', src: 'src/static/videos/venera.mp4', img: '/src/static/images/video-poster-1.jpg', header: 'Где взять базу подписчиков </br>для рассылки', text: 'Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных.'},
-                  {href: '#', src: 'src/static/videos/venera.mp4', img: '/src/static/images/video-poster-4.jpg', header: 'Где взять базу подписчиков </br>для рассылки', text: 'Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных.'},
-                  {href: '#', src: 'src/static/videos/venera.mp4', img: '/src/static/images/video-poster-2.jpg', header: 'Где взять базу подписчиков </br>для рассылки', text: 'Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных.'}]
+                  {href: '##', src: 'src/static/videos/new-yorck.mp4', img: '/src/static/images/video-poster-2.jpg', header: '[1]Где взять базу подписчиков </br>для рассылки', text: '[1]Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных.'},
+                  {href: '##', src: 'src/static/videos/venera.mp4', img: '/src/static/images/video-poster-3.jpg', header: '[2]Где взять базу подписчиков </br>для рассылки', text: '[2]Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных.'},
+                  {href: '##', src: 'src/static/videos/new-yorck.mp4', img: '/src/static/images/video-poster-4.jpg', header: '[3]Где взять базу подписчиков </br>для рассылки', text: '[3]Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных.'},
+                  {href: '##', src: 'src/static/videos/venera.mp4', img: '/src/static/images/video-poster-1.jpg', header: 'Чем хорош телемаркетинг', text: 'Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных.'},
+                  {href: '##', src: 'src/static/videos/venera.mp4', img: '/src/static/images/video-poster-4.jpg', header: '[5]Где взять базу подписчиков </br>для рассылки', text: '[5]Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных.'},
+                  {href: '##', src: 'src/static/videos/venera.mp4', img: '/src/static/images/video-poster-2.jpg', header: '[6]Где взять базу подписчиков </br>для рассылки', text: '[6]Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных.'}]
               for item, index in items
                 a(href= item.href) 
                   +e('list-item').d-flex.set-mb-24
@@ -47,5 +47,5 @@ mixin header-blog(data)
                         img(src="/src/static/images/play.svg", alt="play").position-absolute.set-w-20.set-h-22.img-video
                     +e('info')
                       h5.fz-20.lh-24!= item.header
-                      p.fz-14.lh-20!= item.text
+                      p.video_text-list.fz-14.lh-20!= item.text
 

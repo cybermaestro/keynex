@@ -50,3 +50,36 @@ for (let index = 0; index < open.length; index++) {
   });   //закрытие окна при нажатии на фон 
 
 }
+
+//Видеоплеер
+
+const press = document.querySelectorAll('.video_player__list-item');
+const videoAll = document.querySelectorAll('video');
+const videoHeder = document.querySelector('.video_player__name');
+const videoText = document.querySelector('.video_text');
+const videoHeaderList = document.querySelectorAll('h5');
+const videoTextList = document.querySelectorAll('.video_text-list');
+
+
+
+
+function replacement (i) {
+  let srcClick = videoAll[i].getAttribute('src')
+  let videoImg = videoAll[i].getAttribute('poster')
+  videoHeder.textContent = videoHeaderList[i-1].textContent
+  videoText.textContent = videoTextList[i-1].textContent
+  videoAll[0].removeAttribute('src')
+  videoAll[0].setAttribute('src', srcClick)
+  videoAll[0].removeAttribute('poster')
+  videoAll[0].setAttribute('poster', videoImg)
+}
+
+for (let index = 0; index < videoAll.length; index++) {
+  press[index].addEventListener('click', function () {replacement (index+1)});
+}
+
+
+// let lister = document.querySelectorAll('video');
+// console.log(lister);
+// let mas = lister[0];
+// console.log(mas.getAttribute('src'));
