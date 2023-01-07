@@ -9,7 +9,9 @@
 
     &__tasks {
         display: grid;
-        grid-template: repeat(2,330px) / repeat(3,420px);
+        gap: 25px;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        // grid-template: repeat(2,330px) / repeat(3,420px);
         justify-content: space-between;
     }
 

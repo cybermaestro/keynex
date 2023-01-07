@@ -7,7 +7,7 @@ mixin header-blog(data)
     +menu-crm
     +b('header-crm', {}, 'header').position-relative.set-pt-92.set-pb-100
       .container.position-relative
-        +b('blog-cards')&attributes(attributes).d-flex
+        +b('blog-cards')&attributes(attributes)
             - 
                 cards =[
                 {img: '/src/static/images/card-blog-1.png', header: 'Welcome-цепочки, что это </br>и для чего нужны', text: 'Побочный PR-эффект, как принято считать, </br>основан на тщательном анализе данных. </br>Бизнес-план ускоряет портрет потребителя.', data: '06.07.2022'},

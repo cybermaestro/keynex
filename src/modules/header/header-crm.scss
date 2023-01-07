@@ -9,6 +9,9 @@
   top: 0;
   right: 0;
   z-index: -1;
+  @include mobile {
+    display: none;
+  }
 }
 
 .header-crm {
@@ -55,11 +58,21 @@
   }
 
   .blog-cards {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(398px, 1fr));
     justify-content: space-between;
     
+    @include tablet {
+      margin: 20px 40px;
+    }
+    
+    @include mobile {
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    }
+
     &__card {
       background: $White;
-      width: 398px;
       height: 500px;
       border-radius: 20px;
     }
@@ -103,6 +116,10 @@
 
     &__wrapper {
       justify-content: space-between;
+
+      @include tablet {
+        display: block !important;
+      }
     }
 
     &__header {
@@ -114,6 +131,9 @@
       aspect-ratio: 16/9;
       max-width: 692px;
       max-height: 390px;
+      @include tablet {
+        margin: 20px auto;
+      }
     }
 
     &__video video {
@@ -136,6 +156,9 @@
       overflow: auto;
       max-height: 390px;
       max-width: 552px;
+      @include tablet {
+        margin: 35px auto 0;
+      }
     }
 
     &__list-item {
@@ -167,11 +190,11 @@
 
   .cases-row {
     display: grid;
-    grid-template: repeat(2,330px) / repeat(3,420px);
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
     justify-content: space-between;
 
     &__casus {
-      width: 416px;
       height: 295px;
       border-radius: 30px;
       box-shadow: 0px 5px 26px rgba(0, 0, 0, 0.25);

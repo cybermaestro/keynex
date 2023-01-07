@@ -3,7 +3,7 @@ include ../icon/icon
 mixin footer(data = {})
   +b('footer', {}, 'footer')&attributes(attributes).set-pt-66
     .container
-      +e('box').d-flex.justify-content-between
+      +e('box')
         +e('Services').fz-18.lh-44
           h3 Услуги
           - services = [{name: "Email-маркетинг", href: "/email.html"}, {name: "CRM-маркетинг", href: "/crmMarketing.html"}, {name: "Телемаркетинг", href: "/telemarketing.html"}, {name: "Контент-маркетинг", href: "/con-marcketing.html"}]
@@ -29,12 +29,12 @@ mixin footer(data = {})
             a(href="/contact.html") г. Красноярск, </br>ул. Караульная 3, </br>офис 301
         +e('network')
           h3 Соцсети
-          +e('social-link', {}, 'a')(href="#").set-w-27.set-h-27
-            +icon('instagram')
-          +e('social-link', {}, 'a')(href="#").set-mt-18.set-w-24.set-h-21
-            +icon('telegram')
-          +e('social-link', {}, 'a')(href="#").set-mt-24.set-w-28.set-h-16
-            +icon('vk')
+          +e('social-link', {}, 'a')(href="#").set-w-27.set-h-27.set-ml-15
+            img(src="/src/static/images/instagram.svg", alt="inct")
+          +e('social-link', {}, 'a')(href="#").set-mt-18.set-w-24.set-h-21.set-ml-15
+            img(src="/src/static/images/telegram.svg", alt="telegram")
+          +e('social-link', {}, 'a')(href="#").set-mt-24.set-w-28.set-h-16.set-ml-15
+            img(src="/src/static/images/vk.svg", alt="vk")
         +e('follow')
           h2.fz-32.lh-40 Следите за нами
           p.fz-16.lh-24 Рассказываем, как повысить продажи и сохранить лояльность </br>клиентов. Показываем кейсы из разных сфер В2В и В2С. Пишем не </br>чаще двух раз в неделю!

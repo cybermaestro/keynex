@@ -36,6 +36,6 @@ mixin menu-crm
                 +e('number').position-relative.fz-18.set-pl-65 8 (903) 920-00-19
                     +e('link-telephone', {}, 'label')(for="telephone").position-absolute.set-w-21.set-h-21
                 +e('button', {}, 'a')(href="#").brand-button.phone_button.link-red.set-mt-13 ЗАКАЗАТЬ ЗВОНОК
-                    +icon('phone_button').icon_button.set-mr-12
+                    +e('phone_button', {}, 'img')(src='/src/static/images/phone_button.svg').icon_button.set-mr-12
             +b('night')&attributes(attributes)
                 +e('moon', {}, 'label')(for="moon")

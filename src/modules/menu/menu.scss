@@ -14,7 +14,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-
+    }
+    @include tablet {
+        margin-right: 10px;
     }
 }
 
@@ -48,12 +50,20 @@
         }
     }
 
+    @include tablet {
+        margin-right: 10px;
+      }
+
 }
 
 .navbar {
     &__link {
         color: $SuperDarkGray !important;
         margin-right: 50px;
+
+        @include tablet {
+            margin-right: 7px;
+        }
         &:last-child {
             margin-right: 0;
         }
@@ -114,11 +124,20 @@
         color: $SuperDarkGray !important;
     }
 
+    @include mobile {
+        font-size: 12px;
+        line-height: 10px;
+    }
+
 }
 
 .call {
     &__number {
         color: $DarkGray;
+        @include tablet {
+            font-size: 14px;
+            padding-left: 27px;
+        }
     }
 
     &__link-telephone {
@@ -130,6 +149,17 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        @include tablet {
+            left: 0;
+          }
+    }
+    
+    &__button {
+        @include tablet {
+            font-size: 10px;
+            width: 185px !important;
+            height: 50px !important;
+        }
     }
 }
 
@@ -150,8 +180,10 @@
         opacity: 0.5;
     }
 
+    @include tablet {
+        display: none;
+    }
+    
+
 }
 
-// .navbar:hover .navbar__active {
-//     display: block !important;
-// }

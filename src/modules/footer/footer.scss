@@ -23,6 +23,16 @@
     background-position: center;
   }
 
+  &__box {
+    display: grid;
+    grid-template: 1fr / 15% 15% 15% 15% 1fr;
+    justify-content: space-between;
+    @include tablet {
+      margin: 20px 40px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+
   &__form {
     position: relative;
     display: flex;

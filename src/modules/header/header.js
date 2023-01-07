@@ -60,18 +60,15 @@ const videoText = document.querySelector('.video_text');
 const videoHeaderList = document.querySelectorAll('h5');
 const videoTextList = document.querySelectorAll('.video_text-list');
 
-
-
-
 function replacement (i) {
-  let srcClick = videoAll[i].getAttribute('src')
-  let videoImg = videoAll[i].getAttribute('poster')
-  videoHeder.textContent = videoHeaderList[i-1].textContent
-  videoText.textContent = videoTextList[i-1].textContent
-  videoAll[0].removeAttribute('src')
-  videoAll[0].setAttribute('src', srcClick)
-  videoAll[0].removeAttribute('poster')
-  videoAll[0].setAttribute('poster', videoImg)
+  let srcClick = videoAll[i].getAttribute('src');
+  let videoImg = videoAll[i].getAttribute('poster');
+  videoHeder.textContent = videoHeaderList[i-1].textContent;
+  videoText.textContent = videoTextList[i-1].textContent;
+  videoAll[0].removeAttribute('src');
+  videoAll[0].setAttribute('src', srcClick);
+  videoAll[0].removeAttribute('poster');
+  videoAll[0].setAttribute('poster', videoImg);
 }
 
 for (let index = 0; index < videoAll.length; index++) {
