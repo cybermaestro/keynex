@@ -5,7 +5,7 @@ mixin services
     .container  
         p.set-mt-15.fz-20.lh-27 Комплекс услуг под ключ, для увеличения продаж
         +e('header', {}, 'h2').set-mt-15.fz-56.lh-76  Наши услуги
-        +b('cards')&attributes(attributes).d-flex.justify-content-space-between.ja.set-mt-78
+        +b('cards')&attributes(attributes).ja.set-mt-78
           -
             cards = [
               {img: '/src/static/images/card-1.jpg', href: '/email.html', header: 'Email-маркетинг', array: ["Анализируем имеющиеся ресурсы", "Собираем и сегментируем клиентскую базу", "Разрабатываем стратегию", "Пишем тексты и создаем шаблоны писем", "Запускаем рассылку и анализируем реакцию клиентов"]},
@@ -15,7 +15,7 @@ mixin services
             ]
           for card, index in cards
               +e('card')
-                img(src= card.img, alt="images").set-h-452
+                img(src= card.img, alt="images")
                 +e('info').set-pl-48.set-mb-74.set-pt-50
                   +e('header', {}, 'a')(href= card.href).link-red= card.header
                     ul.set-mt-20

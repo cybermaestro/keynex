@@ -5,9 +5,25 @@
         padding: 0 45px;
         background: linear-gradient(#FFFFFF, #F0F0F0);
         border-radius: 20px;
+        @include mobile {
+            display: block !important;
+          }
     }
 
     &__header {
         color: $SuperDarkGray;
+        @include tablet {
+            font-size: 16px;
+          }
+        
+        @include mobile {
+            text-align: center;
+        }
+    }
+
+    &__button {
+        @include mobile {
+            margin: auto;
+          }
     }
 }

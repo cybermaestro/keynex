@@ -1,6 +1,24 @@
-.flex {
-    position: relative;
-}
+ .menu {
+   &__flex {
+        position: relative;
+        @include mobile {
+            display: grid !important;
+            grid-template: auto / 200px 1fr 194px;
+            grid-template-areas: 'block-1 block-2 block-3' 'center center center';
+            .logo {
+                grid-area: block-1;
+            }
+            .call {
+                grid-area: block-3;
+            }
+            .center {
+                grid-area: center;
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+    }
+ }
 
 .logo {
     &__background{
@@ -14,6 +32,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        @include mobile {
+            display: none;
+        }
     }
     @include tablet {
         margin-right: 10px;

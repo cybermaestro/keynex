@@ -1,6 +1,10 @@
 .consultation {
     $self: &;
 
+    @include tablet {
+        padding: 50px 25px 80px 25px;
+    }
+
     background-color: $ExtraBrightGray;
     opacity: 0.99;
     
@@ -14,15 +18,26 @@
         top: 482px;
         left: 0;
         z-index: -1;
+        @include tablet {
+            display: none;
+        }
       }
 
     &__header {
         font-weight: 700;
         color: $SuperDarkGray;
+        @include tablet {
+            font-size: 40px;
+            line-height: 40px;
+        }
     }
 
     & p {
         color: $SuperDarkGray;
+        @include tablet {
+            font-size: 20px;
+            line-height: 20px;
+        }
     }
 
     &__forma {

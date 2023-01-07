@@ -7,19 +7,33 @@
 
     &__header {
         color: $SuperDarkGray;
+        @include tablet {
+            font-size: 45px;
+        }
     }
 }
 
 .cards {
     $self: &;
 
-    flex-wrap: wrap;
+    display: grid;
+    gap: 70px;
+    grid-template-columns: repeat(auto-fit, minmax(613px, 1fr));
     justify-content: space-between;
+
+    @include mobile {
+        grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+      }
 
     &__card{
         box-shadow: 3px 1px 35px 15px #E5E5E5;
-        width: 613px;
+        max-width: 613px;
         border-radius: 30px 30px 0 0;
+
+        @include tablet {
+            margin: auto;
+            margin-bottom: 0 !important;
+          }
     }
 
     &__card:hover {
@@ -29,7 +43,7 @@
     }
 
     & img {
-        width: 613px;
+        width: 100%;
         border-radius: 30px 30px 0 0;
     }
 
@@ -38,6 +52,11 @@
         font-size: 32px;
         line-height: 40px;
         transition: 0.6s;
+        font-weight: 700;
+
+        @include mobile {
+            font-size: 33px;
+        }
     }
 
     &__info ul {
@@ -46,7 +65,12 @@
         line-height: 30px;
         padding-left: 20px;
         list-style-type: disc;
+
+        @include mobile {
+            font-size: 14px;
+        }
     }
+    
 
     &__card:nth-child(1) {
         margin-bottom: 50px;

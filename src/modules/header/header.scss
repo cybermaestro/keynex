@@ -1,6 +1,12 @@
 .header {
   $self: &;
 
+  & img {
+    @include tablet {
+      display: none;
+    }
+  }
+
   &__circle {
     z-index: -2;
     right: 0;
@@ -46,15 +52,26 @@
 
   &__header {
     color: $SuperDarkGray;
+    @include tablet {
+      margin-top: 75px;
+      font-size: 55px;
+      line-height: 57px;
+    }
   }
 
   & p {
     color: $DarkGray;
+    @include tablet {
+      margin-top: 27px;
+    }
   }
 
   &__tagline {
     color: $DarkRed;
     text-transform: uppercase;
+    @include tablet {
+      margin-top: 80px;
+    }
   }
 }
 

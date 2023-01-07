@@ -29,7 +29,44 @@
     justify-content: space-between;
     @include tablet {
       margin: 20px 40px;
+      gap: 20px;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__services {
+    @include tablet {
+      line-height: 20px;
+    }
+  }
+  
+  &__contacts {
+    min-width: 260px;
+    @include mobile {
+      margin: 0 auto;
+    }
+  }
+
+  &__agency {
+    @include tablet {
+      line-height: 20px;
+    }
+  }
+
+  &__wrapper {
+    @include mobile {
+      display: flex;
+      justify-content: center;
+      .footer__social-link:nth-child(2) {
+        margin-top: 2px;
+      }
+      .footer__social-link:nth-child(3) {
+        margin-top: 6px;
+      }
     }
   }
 

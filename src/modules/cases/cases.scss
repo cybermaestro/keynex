@@ -1,27 +1,42 @@
 .cases {
     $self: &;
 
+    @include tablet {
+        padding-bottom: 40px;
+      }
+
     &__header {
         color: $SuperDarkGray;
+        @include tablet {
+            font-size: 22px;
+          }
     }
 
     & p {
         color: $DarkGray;
+        @include tablet {
+            font-size: 12px;
+          }
     }
 
     & img:nth-child(1) {
         top: 0;
         left: 0;
+        z-index: -1;
     }
 
     & img:nth-child(2) {
         top: 640px;
         left: 110px;
+        z-index: -1;
     }
 
     & img:nth-child(3) {
         top: 272px;
         left: 1175px;
+        @include tablet {
+            display: none;
+          }
     }
 }
 
@@ -30,6 +45,13 @@
     $self: &;
     justify-content: space-between;
     padding: 0 150px;
+    @include tablet {
+        padding: 0 20px;
+      }
+    @include mobile {
+        display: block !important;
+        margin-top: 0;
+      }
     
     &__case {
         border-radius: 20px;
@@ -37,6 +59,10 @@
         &:hover {
             background: linear-gradient(#FFFFFF, #F0F0F0);
         }
+
+        @include mobile {
+            margin: 0 auto;
+          }
     }
     
     &__emblem {

@@ -1,6 +1,10 @@
 .plate {
     $self: &;
 
+    @include tablet {
+        padding: 0 20px;
+      }
+
     &__box {
         flex-direction: column;
         align-items: center;
@@ -11,6 +15,20 @@
         background-size: cover;
         background-position: center;
         color: #FFFF;
+    }
+
+    &__header {
+        @include mobile {
+            margin-top: 65px;
+            font-size: 35px;
+            line-height: 55px;
+          }
+    }
+
+    & p {
+        @include mobile {
+            font-size: 20px;
+          }
     }
 
 }
