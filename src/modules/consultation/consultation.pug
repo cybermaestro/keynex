@@ -5,7 +5,7 @@ mixin consultation
     .container
         +e('header', {}, 'h2').fz-56.lh-76 Расскажите о Вашей задаче
         p.set-mt-20.fz-24.lh-32 Получите консультацию в подарок
-        +e('forma', {}, 'form').w-100
+        +e('forma', {}, 'form')(action="/consultation.php", method="consultation").w-100
             +e('consultation-input', {}, 'input')(
                         type="text"
                         placeholder="Имя*"
@@ -26,6 +26,7 @@ mixin consultation
                         placeholder="Задача для агенства*"
                         name="task"
                         ).set-mt-24
+            input(type="submit" value="Отправить")
             +b('agreement').d-flex.set-mt-22
                 +e('box', {}, 'input')(tabindex="6" type="checkbox" name="agreement" value="yes")
                 p.set-ml-16 Согласен на обработку моих персональных данных
