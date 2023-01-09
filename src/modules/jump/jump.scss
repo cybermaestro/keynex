@@ -5,9 +5,17 @@
 
     &__header {
         font-weight: 700;
+
+        @include mobile {
+            font-size: 20px;
+            line-height: 30px;
+        }
     }
 
     &__cards {
+        display: grid;
+        gap: 25px;
+        grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
         justify-content: space-between;
     }
 
@@ -15,6 +23,14 @@
         border-radius: 30px;
         padding: 35px 0 0 30px;
         transition: 0.5s;
+
+        @include tablet {
+            margin: 0 auto;
+        }
+
+        @include mobile {
+            margin: 0 auto;
+        }
 
         &_1 {
             width: 100%;

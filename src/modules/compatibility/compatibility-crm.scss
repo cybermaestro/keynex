@@ -1,22 +1,47 @@
 .compatibility-crm {
     $self: &;
-    height: 971px;
     background: $ExtraBrightGray;
     color: $SuperDarkGray;
     opacity: 0.99;
 
+    @include mobile {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
     &__header {
         font-weight: 700;
+
+        @include mobile {
+            font-size: 30px;
+            line-height: 60px;
+        }
     }
 
     & p {
         color: $DarkGray;
         flex-wrap: wrap;
+
+        @include mobile {
+            font-size: 12px;
+        }
     }
 
     &__box {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
         justify-content: space-between;
-        flex-wrap: wrap;
+
+        & a {
+            @include tablet {
+                margin: 0 auto;
+            }
+
+            @include mobile {
+                margin: 0 auto;
+            }
+        }
     }
 
     &__card {
@@ -36,18 +61,19 @@
         & p {
             color: $SuperDarkGray;
             font-weight: 700;
+
+            @include tablet {
+                font-size: 24px;
+            }
         }
 
         &:nth-child(1) {
             margin-bottom: 40px;
+
+            @include tablet {
+                margin-bottom: 20px;
+            }
         }
 
-        // &:nth-child(2) {
-        //     margin-bottom: 40px;
-        // }
-
-        // &:nth-child(3) {
-        //     margin-bottom: 40px;
-        // }
     }
 }

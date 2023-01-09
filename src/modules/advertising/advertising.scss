@@ -29,9 +29,26 @@
         z-index: -1;
     }
 
+    &__header {
+        @include mobile {
+            font-size: 25px;
+        }
+    }
+    
     &__box {
         justify-content: space-between;
         align-items: center;
         color: $White;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+
+        & a {
+            @include mobile {
+                margin-top: 30px;
+            }
+        }
     }
 }

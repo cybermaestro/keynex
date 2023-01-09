@@ -1,6 +1,10 @@
 .header-email-backend {
     background: linear-gradient(62.98deg, #DFDFDF -25.47%, #FFFFFF 81.18%);
     opacity: 0.99;
+
+    @include tablet {
+      padding: 0 40px;
+    }
   
   }
   
@@ -13,8 +17,20 @@
   
   .header-email {
       $self: &;
-      height: 722px;
+      max-height: 722px;
       opacity: 0.99;
+      padding-bottom: 200px;
+
+      @include tablet {
+        padding-top: 0;
+        padding-bottom: 80px;
+      }
+
+      & img {
+        @include tablet {
+          display: none;
+        }
+      }
       
       & img:nth-child(1) {
         top: 131px;
@@ -29,14 +45,37 @@
     
       &__header {
         color: $SuperDarkGray;
+
+        @include tablet {
+          margin-top: 25px;
+          font-size: 55px;
+          line-height: 57px;
+        }
+
+        @include mobile {
+          font-size: 34px;
+          line-height: 40px;
+        }
       }
     
       & p {
         color: $DarkGray;
+
+        @include tablet {
+          margin-top: 27px;
+        }
+    
+        @include mobile {
+          font-size: 14px;
+        }
       }
     
       &__tagline {
         color: $DarkRed;
+
+        @include tablet {
+          margin-top: 80px;
+        }
       }
   
       &__button {

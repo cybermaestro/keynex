@@ -57,12 +57,22 @@
       font-size: 55px;
       line-height: 57px;
     }
+
+    @include mobile {
+      font-size: 34px;
+      line-height: 40px;
+    }
   }
 
   & p {
     color: $DarkGray;
+
     @include tablet {
       margin-top: 27px;
+    }
+
+    @include mobile {
+      font-size: 14px;
     }
   }
 
@@ -86,6 +96,16 @@
 .contact-box {
   justify-content: space-between;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &__box-left {
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
   &__row {
     display: flex;
   }
@@ -96,6 +116,12 @@
     border-radius: 18px;
     box-shadow: 15px 13px 14px -2px rgba(34, 60, 80, 0.2);
     overflow: hidden;
+
+    @include mobile {
+      width: 300px;
+      height: 320px;
+      margin: 0 auto;
+    }
   }
 
   & h5 {

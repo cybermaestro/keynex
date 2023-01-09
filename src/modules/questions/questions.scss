@@ -1,8 +1,16 @@
 .questions {
     $self: &;
 
+    @include tablet {
+        padding-bottom: 60px;
+    }
+
     &__header {
         color: $SuperDarkGray;
+        @include mobile {
+            font-size: 35px;
+            line-height: 60px;
+          }
     }
 }
 
@@ -38,10 +46,19 @@
         color: $SuperDarkGray;
         font-size: 24px;
         line-height: 32px;
+
+        @include mobile {
+            font-size: 15px;
+            line-height: 20px;
+          }
     }
 
     &__answer {
         display: none!important;
+
+        @include mobile {
+            flex-direction: column !important;
+          }
     }
 
     &__defendant {
@@ -60,6 +77,11 @@
         color: $DarkGray;
         font-size: 16px;
         line-height: 24px;
+
+        @include mobile {
+            font-size: 12px;
+            line-height: 18px;
+          }
     }
 }
 

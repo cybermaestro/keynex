@@ -2,16 +2,24 @@
     $self: &;
     color: $SuperDarkGray;
 
+    @include mobile {
+        padding-top: 60px;
+    }
+
     
     &__header {
         font-weight: 700;
+
+        @include mobile {
+            font-size: 45px;
+            text-align: center;
+        }
     }
 
     &__tasks {
         display: grid;
         gap: 25px;
-        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-        // grid-template: repeat(2,330px) / repeat(3,420px);
+        grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
         justify-content: space-between;
     }
 
@@ -32,6 +40,10 @@
             .business-tasks_email__price span {
                 color: $DarkRed;
             }
+        }
+
+        @include mobile {
+            margin: 0 auto;
         }
     }
 
@@ -76,22 +88,38 @@
     top: 125px;
     right: 158px;
     z-index: -2;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .tasks-bk:nth-child(2) {
     top: 115px;
     right: 495px;
     z-index: -1;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .tasks-bk:nth-child(3) {
     top: 228px;
     right: 378px;
     z-index: -1;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .tasks-bk:nth-child(4) {
     top: 253px;
     right: 403px;
     z-index: -2;
+
+    @include mobile {
+        display: none;
+    }
 }

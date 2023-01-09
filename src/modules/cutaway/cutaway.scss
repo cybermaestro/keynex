@@ -1,15 +1,38 @@
 .cutaway {
     $self: &;
 
+    @include mobile {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     & p {
         color: $SuperDarkGray;
+        @include mobile {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+
+    &__box {
+        @include tablet {
+            flex-direction: column;
+        }
     }
 
     &__photo {
+        & img:nth-child(1) {
+            @include mobile {
+                max-width: 300px;
+            }
+        }
         & img:nth-child(2) {
             z-index: -1;
             top: 107px;
             left: -20px;
+            @include mobile {
+                display: none;
+            }
         }
         & img:nth-child(3) {
             top: 36px;
@@ -18,6 +41,17 @@
         & img:nth-child(4) {
             top: 540px;
             right: 18px;
+            z-index: -1;
+        }
+
+        @include tablet {
+            margin: 0 auto;
+        }
+    }
+
+    &__info {
+        @include tablet {
+            margin: 0 auto;
         }
     }
 
@@ -26,6 +60,17 @@
         & span {
             color: $SuperDarkGray;
             font-weight: 700;
+        }
+
+        @include mobile {
+           font-size: 14px;
+           line-height: 22px;
+        }
+    }
+
+    &__button {
+        @include mobile {
+            margin: 50px auto 0;
         }
     }
 

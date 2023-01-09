@@ -4,9 +4,18 @@
     opacity: 0.99;
     text-align: center;
 
+    @include mobile {
+        padding-top: 60px;
+    }
+
     &__header {
         color: $SuperDarkGray;
         font-weight: 700;
+
+        @include mobile {
+            font-size: 40px;
+            line-height: 60px;
+        }
     }
 
     & h5 {
@@ -14,6 +23,9 @@
     }
 
     &__box {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
         justify-content: space-between;
     }
 
@@ -23,6 +35,10 @@
         border-radius: 30px;
         padding: 40px;
         transition: 0.6s;
+
+        @include tablet {
+            margin: 0 auto;
+        }
 
         &:hover {
             color: $White;
@@ -74,9 +90,18 @@
     background: $White;
     border-radius: 30px;
     padding: 50px 40px;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
     
     &__box {
         text-align: left;
+    }
+
+    &__button {
+        margin-top: 20px;
     }
 
     & h3 {

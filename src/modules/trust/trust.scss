@@ -1,6 +1,10 @@
 .trust {
     $self: &;
 
+    @include mobile {
+        padding-bottom: 50px;
+    }
+
     & img:nth-child(1){
         top: -122px;
         right: 38px;
@@ -21,8 +25,20 @@
         left: 454px;
     }
 
+
     &__header {
         color: $SuperDarkGray;
+        @include mobile {
+            font-size: 40px;
+            line-height: 50px;
+            margin-top: 130px;
+        }
+    }
+
+    &__cards {
+        @include tablet {
+            flex-direction: column;
+        }
     }
 
     &__card {
@@ -30,6 +46,14 @@
             .trust__circle {
                 background: #DFDFDF;
             };
+        }
+
+        @include tablet {
+            margin: 10px auto;
+        }
+
+        @include mobile {
+            margin: 10px auto;
         }
     }
 

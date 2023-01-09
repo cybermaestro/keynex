@@ -1,6 +1,10 @@
 .trust-email {
     $self: &;
 
+    @include mobile {
+        padding-bottom: 50px;
+    }
+
     & img:nth-child(1){
         top: 170px;
         right: 38px;
@@ -26,10 +30,26 @@
         top: -263px;
         left: 437px;
         z-index: -1;
+        
+        @include tablet {
+            display: none;
+        }
     }
 
     &__header {
         color: $SuperDarkGray;
+
+        @include mobile {
+            font-size: 40px;
+            line-height: 50px;
+            margin-top: 130px;
+        }
+    }
+
+    &__cards {
+        @include tablet {
+            flex-direction: column;
+        }
     }
 
     &__card {
@@ -37,6 +57,14 @@
             .trust-email__circle {
                 background: #DFDFDF;
             };
+        }
+
+        @include tablet {
+            margin: 10px auto;
+        }
+
+        @include mobile {
+            margin: 10px auto;
         }
     }
 

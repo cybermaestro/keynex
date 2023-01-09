@@ -11,6 +11,7 @@ const Dotenv = require('dotenv-webpack');
 const { VueLoaderPlugin } = require('vue-loader');
 const compiler = require('vue-template-compiler');
 
+
 let plugins = [];
 let page;
 let links = [];
@@ -74,6 +75,8 @@ module.exports = {
   // },
   module: {
     rules: [
+
+      
       {
         test: /\.vue$/,
         use: [
